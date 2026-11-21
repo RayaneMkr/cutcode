@@ -1,0 +1,1754 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cutcode — Rayane Menkar</title>
+<meta name="description" content="Cutcode — Rayane Menkar, développeur freelance : montage vidéo pour créateurs (shorts, vlogs), sites web et landing pages, automatisations IA.">
+<meta name="theme-color" content="#05060A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cutcode — Rayane Menkar">
+<meta property="og:description" content="Cutcode — Rayane Menkar, développeur freelance : montage vidéo pour créateurs (shorts, vlogs), sites web et landing pages, automatisations IA.">
+<meta property="og:url" content="https://cutcode.vercel.app/">
+<meta property="og:image" content="https://cutcode.vercel.app/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305060A'/%3E%3Cpath d='M44 20a16 16 0 1 0 0 24' fill='none' stroke='%23C6F432' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/unbounded-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:400;src:url(assets/fonts/inter-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:500;src:url(assets/fonts/inter-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:600;src:url(assets/fonts/inter-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:400;src:url(assets/fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:500;src:url(assets/fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:400;src:url(assets/fonts/unbounded-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:500;src:url(assets/fonts/unbounded-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Unbounded';font-style:normal;font-display:swap;font-weight:600;src:url(assets/fonts/unbounded-latin-600-normal.woff2) format('woff2')}</style>
+<style>
+body{margin:0;background:#05060A}
+a{color:#EDEEF2}a:hover{color:#FFFFFF}
+@keyframes rpm-ping{0%{transform:scale(1);opacity:.75}100%{transform:scale(2.8);opacity:0}}
+@keyframes rpm-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rpm-fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes rpm-playhead{from{left:0%}to{left:100%}}
+@keyframes rpm-dot{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+@keyframes rpm-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes rpm-scan{from{top:0%}to{top:100%}}
+@keyframes rpm-grow3d{from{transform:scaleY(.001)}to{transform:scaleY(1)}}
+.rpm-lift{transition:transform .3s ease,border-color .3s ease}
+.rpm-lift:hover{transform:translateY(-4px);border-color:#3A3E48}
+.rpm-tilt{transition:transform .18s ease-out,border-color .3s ease}
+.rpm-tilt:hover{border-color:#3A3E48}
+.rpm-stage{cursor:grab}
+.rpm-stage:active{cursor:grabbing}
+@media (max-width: 640px){.rpm-navlink{display:none!important}.rpm-hide-sm{display:none!important}}
+@media (max-width: 480px){.rpm-term{font-size:11.5px!important;padding:12px!important}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#EDEEF2;font-family:sans-serif;padding:24px">Activez JavaScript pour voir le portfolio. Contact : rayaneMenkar_pro@outlook.fr</p></noscript>
+<template id="dc-markup">
+<div style="background: #05060A; color: #EDEEF2; font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; overflow-x: hidden">
+
+<div style="position: relative">
+<div aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(#10131A 1px, transparent 1px), linear-gradient(90deg, #10131A 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: linear-gradient(#000 50%, transparent); mask-image: linear-gradient(#000 50%, transparent); pointer-events: none"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px)">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 0; border-bottom: 1px solid #1A1D25">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #EDEEF2">
+<span style="width: 28px; height: 28px; box-sizing: border-box; border: 1px solid {{accent}}; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 18px {{acc.a35}}"><span style="width: 10px; height: 10px; background: {{accent}}; display: block"></span></span>
+<span style="display: flex; flex-direction: column; gap: 3px">
+<span style="font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.08em">CUTCODE</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8F99; letter-spacing: 0.1em">RAYANE MENKAR</span>
+</span>
+</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 14px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8A8F99; display: inline-flex; align-items: center; gap: 8px; letter-spacing: 0.06em"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; display: inline-block; box-shadow: 0 0 10px {{accent}}"></span>PARIS {{clock}}</span>
+<a href="#services" class="rpm-navlink" style="text-decoration: none; color: #B4B7C0">Services</a>
+<a href="#demo" class="rpm-navlink" style="text-decoration: none; color: #B4B7C0">Démo</a>
+<a href="#projets" class="rpm-navlink" style="text-decoration: none; color: #B4B7C0">Projets</a>
+<a href="#parcours" class="rpm-navlink" style="text-decoration: none; color: #B4B7C0">Parcours</a>
+<a href="#contact" style="text-decoration: none; color: #05060A; background: {{accent}}; padding: 0 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; box-shadow: 0 0 24px {{acc.a35}}">Me contacter</a>
+</nav>
+</header>
+
+<section id="top" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; padding: clamp(48px, 7vw, 96px) 0 80px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; padding: 8px 16px; border: 1px solid #262A33; background: rgba(11,13,18,0.8); border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #B4B7C0">
+<span style="position: relative; width: 8px; height: 8px; display: inline-block">
+<span style="position: absolute; top: 0; left: 0; width: 8px; height: 8px; border-radius: 50%; background: {{accent}}; display: block"></span>
+<span style="position: absolute; top: 0; left: 0; width: 8px; height: 8px; border-radius: 50%; border: 2px solid {{accent}}; box-sizing: border-box; display: block; animation: rpm-ping 1.8s ease-out infinite"></span>
+</span>
+<span>DISPONIBLE POUR DES MISSIONS FREELANCE</span>
+</div>
+<h1 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(36px, 5.4vw, 72px); line-height: 1.05; letter-spacing: -0.03em">Je monte vos vidéos, je code vos outils, <span style="color: {{accent}}; text-shadow: 0 0 32px {{acc.a35}}">j'automatise le reste.</span></h1>
+<div class="rpm-term" style="display: flex; align-items: center; gap: 10px; max-width: 580px; box-sizing: border-box; padding: 14px 16px; border-radius: 10px; border: 1px solid #1A1D25; background: rgba(11,13,18,0.9); font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #B4B7C0; white-space: nowrap; overflow: hidden">
+<span style="color: {{accent}}">&gt;</span>
+<span>{{typedText}}</span>
+<span style="width: 8px; height: 17px; background: {{accent}}; display: inline-block; flex-shrink: 0; animation: rpm-blink 1s steps(1) infinite"></span>
+</div>
+<p style="margin: 0; max-width: 600px; font-size: 18px; line-height: 1.65; color: #9EA3AE">Développeur et monteur freelance, formé en master informatique spécialité data et IA. Je travaille à distance avec des créateurs de contenu, des indépendants et des PME.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#projets" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: {{accent}}; color: #05060A; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 0 30px {{acc.a35}}">Voir les projets
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; border: 1px solid #343842; color: #EDEEF2; text-decoration: none; font-weight: 500; font-size: 16px">Demander un devis</a>
+</div>
+</div>
+
+<div style="flex: 1 1 400px; min-width: 0; position: relative; border: 1px solid #1A1D25; background: rgba(8,10,14,0.85); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<span aria-hidden="true" style="position: absolute; top: -1px; left: -1px; width: 16px; height: 16px; border-top: 2px solid {{accent}}; border-left: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; top: -1px; right: -1px; width: 16px; height: 16px; border-top: 2px solid {{accent}}; border-right: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; bottom: -1px; left: -1px; width: 16px; height: 16px; border-bottom: 2px solid {{accent}}; border-left: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; bottom: -1px; right: -1px; width: 16px; height: 16px; border-bottom: 2px solid {{accent}}; border-right: 2px solid {{accent}}"></span>
+<div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #8A8F99">
+<span>STACK.CORE // 16 MODULES</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; color: {{accent}}"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; display: inline-block"></span>LIVE</span>
+</div>
+<div style="position: relative; height: clamp(320px, 36vw, 440px); overflow: hidden">
+<canvas data-rpm="sphere" ref="{{sph.ref}}" class="rpm-stage" role="img" aria-label="Sphère interactive des technologies utilisées : Next.js, React Native, Supabase, Symfony, Python, FFmpeg, Claude API, n8n, Make, Ansible, Stripe, WebGPU, Whisper, montage, sous-titres, agents IA. Glisser pour la faire tourner." onPointerDown="{{sph.down}}" onPointerMove="{{sph.move}}" onPointerUp="{{sph.up}}" onPointerCancel="{{sph.up}}" onPointerLeave="{{sph.leave}}" style="width: 100%; height: 100%; display: block; touch-action: none"></canvas>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; height: 1px; background: {{acc.a35}}; box-shadow: 0 0 12px {{acc.a60}}; animation: rpm-scan 5s linear infinite; pointer-events: none"></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; border-top: 1px solid #1A1D25; padding-top: 12px; font-size: 13px">
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">BASE</span><span>Île-de-France · 100 % remote</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">POSTE ACTUEL</span><span>Développeur, ARONDOR</span></div>
+</div>
+<div style="display: inline-flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #8A8F99">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>ATTRAPEZ LA SPHÈRE ET FAITES-LA TOURNER</span>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+
+<div aria-hidden="true" style="overflow: hidden; border-top: 1px solid #1A1D25; border-bottom: 1px solid #1A1D25; padding: 20px 0; background: #07080C">
+<div style="display: flex; width: max-content; animation: rpm-marquee 42s linear infinite; font-family: 'Unbounded', sans-serif; font-weight: 400; font-size: 22px; letter-spacing: -0.01em; color: #474B56">
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Montage vidéo<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Sous-titres dynamiques<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Sites web<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">SaaS<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Applis mobiles<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Automatisation<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Agents IA<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Scripts Python<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Montage vidéo<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Sous-titres dynamiques<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Sites web<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">SaaS<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Applis mobiles<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Automatisation<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Agents IA<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+<span style="display: inline-flex; align-items: center; gap: 40px; padding-right: 40px">Scripts Python<span style="width: 9px; height: 9px; background: {{accent}}; display: inline-block; transform: rotate(45deg)"></span></span>
+</div>
+</div>
+
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px)">
+
+<section id="services" style="padding: 96px 0; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[01] SERVICES</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(28px, 3.8vw, 48px); letter-spacing: -0.03em; line-height: 1.1">Trois métiers, un seul interlocuteur.</h2>
+</div>
+<p style="margin: 0; max-width: 420px; color: #9EA3AE; font-size: 17px; line-height: 1.6">Une vidéo à monter, un site à lancer ou une tâche répétitive à faire disparaître : je prends le sujet de bout en bout.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px">
+<article class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="position: relative; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start">
+<div style="width: 50px; height: 50px; border-radius: 14px; border: 1px solid {{acc.a35}}; background: {{acc.a06}}; display: flex; align-items: center; justify-content: center; color: {{accent}}; box-shadow: 0 0 22px {{acc.a10}}">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2"></rect><path d="M16 10l5-3v10l-5-3"></path></svg>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #4A4E58">MOD.01</span>
+</div>
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 21px; letter-spacing: -0.02em">Montage vidéo</h3>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Des vidéos rythmées qui retiennent l'attention dès les premières secondes.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #D4D6DC">
+<li>Shorts, Reels et TikTok en 9:16</li>
+<li>Sous-titres dynamiques mot par mot</li>
+<li>Best-of et clips de streams Twitch</li>
+<li>Montage de vidéos YouTube longues</li>
+</ul>
+<a href="#contact" onClick="{{pickNeed.video}}" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: {{accent}}; text-decoration: none; font-weight: 600; font-size: 15px">Lancer un projet vidéo
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</article>
+<article class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="position: relative; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start">
+<div style="width: 50px; height: 50px; border-radius: 14px; border: 1px solid {{acc.a35}}; background: {{acc.a06}}; display: flex; align-items: center; justify-content: center; color: {{accent}}; box-shadow: 0 0 22px {{acc.a10}}">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4"></path><path d="M16 8l4 4-4 4"></path><path d="M13.5 5l-3 14"></path></svg>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #4A4E58">MOD.02</span>
+</div>
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 21px; letter-spacing: -0.02em">Sites et logiciels</h3>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Du site vitrine à l'application métier, pensés pour être rapides et faciles à faire évoluer.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #D4D6DC">
+<li>Sites vitrines et landing pages</li>
+<li>Web apps et SaaS avec paiement Stripe</li>
+<li>Applications de gestion sur mesure</li>
+<li>Applis mobiles React Native</li>
+</ul>
+<a href="#contact" onClick="{{pickNeed.site}}" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: {{accent}}; text-decoration: none; font-weight: 600; font-size: 15px">Lancer un projet web
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</article>
+<article class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="position: relative; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start">
+<div style="width: 50px; height: 50px; border-radius: 14px; border: 1px solid {{acc.a35}}; background: {{acc.a06}}; display: flex; align-items: center; justify-content: center; color: {{accent}}; box-shadow: 0 0 22px {{acc.a10}}">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6l1-7z"></path></svg>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #4A4E58">MOD.03</span>
+</div>
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 21px; letter-spacing: -0.02em">Automatisation et IA</h3>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Les tâches qui vous prennent des heures chaque semaine, confiées à des workflows et des agents IA.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #D4D6DC">
+<li>Workflows n8n et Make</li>
+<li>Assistants et agents IA connectés à vos outils</li>
+<li>Scripts Python et intégrations d'API</li>
+<li>Déploiements automatisés avec Ansible</li>
+</ul>
+<a href="#contact" onClick="{{pickNeed.auto}}" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: {{accent}}; text-decoration: none; font-weight: 600; font-size: 15px">Automatiser une tâche
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</article>
+</div>
+</section>
+
+<section id="demo" style="padding: 96px 0; border-top: 1px solid #1A1D25; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[02] DÉMO</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(28px, 3.8vw, 48px); letter-spacing: -0.03em; line-height: 1.1">Le montage, avant / après.</h2>
+</div>
+<p style="margin: 0; max-width: 440px; color: #9EA3AE; font-size: 17px; line-height: 1.6">Un vlog esthétique « un matin à Paris ». Faites glisser pour comparer : à gauche les rushs bruts, à droite le montage livré, avec étalonnage ciné, mouvements de caméra, transitions et titres animés.</p>
+</div>
+<div style="position: relative">
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; left: -6px; width: 20px; height: 20px; border-top: 2px solid {{accent}}; border-left: 2px solid {{accent}}; pointer-events: none"></span>
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; right: -6px; width: 20px; height: 20px; border-top: 2px solid {{accent}}; border-right: 2px solid {{accent}}; pointer-events: none"></span>
+<span aria-hidden="true" style="position: absolute; z-index: 2; bottom: -6px; left: -6px; width: 20px; height: 20px; border-bottom: 2px solid {{accent}}; border-left: 2px solid {{accent}}; pointer-events: none"></span>
+<span aria-hidden="true" style="position: absolute; z-index: 2; bottom: -6px; right: -6px; width: 20px; height: 20px; border-bottom: 2px solid {{accent}}; border-right: 2px solid {{accent}}; pointer-events: none"></span>
+<div role="img" aria-label="Comparaison d'une vidéo avant et après montage" onPointerDown="{{dragStart}}" onPointerMove="{{dragMove}}" onPointerUp="{{dragEnd}}" onPointerLeave="{{dragEnd}}" style="position: relative; width: 100%; aspect-ratio: 1600 / 684; min-height: 200px; border-radius: 18px; overflow: hidden; border: 1px solid #1A1D25; background: #131418; cursor: ew-resize; touch-action: pan-y; user-select: none">
+<div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: #0E1015; overflow: hidden">
+<video data-demo="after" src="assets/apres.mp4" poster="assets/apres.jpg" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="auto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none"></video>
+<div style="position: absolute; bottom: 20px; right: 20px; font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 7px 12px; border-radius: 999px; background: #05060A; color: #EDEEF2">APRÈS · MONTAGE</div>
+</div>
+<div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: #2A2B30; overflow: hidden; clip-path: inset(0 {{clipRight}}% 0 0)">
+<video data-demo="before" src="assets/avant.mp4" poster="assets/avant.jpg" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="auto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none"></video>
+<div style="position: absolute; bottom: 20px; left: 20px; display: flex; gap: 8px; align-items: center">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 7px 12px; border-radius: 999px; background: #05060A; color: #EDEEF2">AVANT</span>
+<span class="rpm-hide-sm" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #EDEEF2; text-shadow: 0 1px 6px rgba(0,0,0,0.7)">RUSHS BRUTS · PROFIL PLAT</span>
+</div>
+</div>
+<div style="position: absolute; top: 0; bottom: 0; left: {{split}}%; width: 2px; margin-left: -1px; background: {{accent}}; box-shadow: 0 0 16px {{accent}}; pointer-events: none">
+<div style="position: absolute; top: 50%; left: 50%; width: 48px; height: 48px; margin: -24px 0 0 -24px; border-radius: 50%; background: #05060A; border: 2px solid {{accent}}; box-sizing: border-box; color: {{accent}}; display: flex; align-items: center; justify-content: center">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6"></path><path d="M15 6l6 6-6 6"></path></svg>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+<label for="rpm-split" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #9EA3AE">GLISSER POUR COMPARER</label>
+<input id="rpm-split" type="range" min="0" max="100" step="1" value="{{split}}" onChange="{{onSplit}}" style="flex: 1 1 260px; min-height: 44px; accent-color: {{accent}}; cursor: pointer">
+</div>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #8A8F99">Rushs : Pexels (libres de droits) · montage, étalonnage et titres : Cutcode</p>
+</section>
+
+<section id="projets" style="padding: 96px 0; border-top: 1px solid #1A1D25; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[03] PROJETS</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(28px, 3.8vw, 48px); letter-spacing: -0.03em; line-height: 1.1">Ce que je construis.</h2>
+</div>
+<p style="margin: 0; max-width: 440px; color: #9EA3AE; font-size: 17px; line-height: 1.6">Chaque projet est un objet 3D : attrapez-le et faites-le tourner dans tous les sens. Les boutons font réagir les démos.</p>
+</div>
+<div role="group" aria-label="Filtrer les projets" style="display: flex; flex-wrap: wrap; gap: 10px">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid {{f.bd}}; background: {{f.bg}}; color: {{f.fg}}; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease">{{f.label}}<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px">{{f.count}}</span></button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 24px">
+
+<article class="rpm-lift" style="display: {{show.clipforge}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Téléphone en 3D affichant un clip Clipforge sous-titré. Glisser pour le faire tourner." onPointerDown="{{h3d.phone.down}}" onPointerMove="{{h3d.phone.move}}" onPointerUp="{{h3d.phone.up}}" onPointerCancel="{{h3d.phone.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 1000px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="phone" ref="{{h3d.phone.ref}}" style="position: relative; width: 150px; height: 300px; transform-style: preserve-3d">
+<div style="position: absolute; left: 0; top: 0; width: 150px; height: 300px; box-sizing: border-box; transform: translateZ(8px); backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 22px; background: #0E1016; border: 5px solid #1E2129; padding: 16px 10px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 0 34px {{acc.a15}}">
+<div style="background: #FFFFFF; color: #05060A; font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 10px; text-align: center; padding: 8px 4px; border-radius: 7px">ENFIN LA VÉRITÉ…</div>
+<div style="text-align: center; font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 15px; line-height: 1.35">
+<sc-for list="{{words}}" as="w" hint-placeholder-count="5">
+<span style="display: inline-block; margin: 0 2px; color: {{w.color}}; transform: scale({{w.scale}}); transition: transform 0.18s ease, color 0.18s ease">{{w.text}}</span>
+</sc-for>
+</div>
+<div style="height: 4px; border-radius: 2px; background: #2E2F36; overflow: hidden">
+<div style="height: 4px; width: {{progress}}%; background: {{accent}}; transition: width 0.45s ease"></div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; width: 150px; height: 300px; box-sizing: border-box; transform: rotateY(180deg) translateZ(8px); backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 22px; background: #15181F; border: 1px solid #2A2E37; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+<div style="position: absolute; top: 14px; left: 14px; width: 50px; height: 50px; border-radius: 14px; background: #0B0D12; border: 1px solid #2A2E37; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; padding: 7px; box-sizing: border-box">
+<span style="border-radius: 50%; background: #1C2029; border: 2px solid #2E333D; display: block"></span>
+<span style="border-radius: 50%; background: #1C2029; border: 2px solid #2E333D; display: block"></span>
+<span style="border-radius: 50%; background: #1C2029; border: 2px solid #2E333D; display: block"></span>
+<span style="border-radius: 50%; background: {{acc.a35}}; display: block"></span>
+</div>
+<span style="width: 18px; height: 18px; background: {{accent}}; display: block; box-shadow: 0 0 16px {{acc.a60}}"></span>
+<span style="font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.12em; color: #8A8F99">CUTCODE</span>
+</div>
+<div style="position: absolute; left: 67px; top: 0; width: 16px; height: 300px; transform: rotateY(90deg) translateZ(75px); background: #23262E; border-radius: 8px; backface-visibility: hidden; -webkit-backface-visibility: hidden"></div>
+<div style="position: absolute; left: 67px; top: 0; width: 16px; height: 300px; transform: rotateY(-90deg) translateZ(75px); background: #1D2027; border-radius: 8px; backface-visibility: hidden; -webkit-backface-visibility: hidden"></div>
+<div style="position: absolute; left: 0; top: 142px; width: 150px; height: 16px; transform: rotateX(90deg) translateZ(150px); background: #2A2E37; border-radius: 8px; backface-visibility: hidden; -webkit-backface-visibility: hidden"></div>
+<div style="position: absolute; left: 0; top: 142px; width: 150px; height: 16px; transform: rotateX(-90deg) translateZ(150px); background: #1A1D24; border-radius: 8px; backface-visibility: hidden; -webkit-backface-visibility: hidden"></div>
+</div>
+<button type="button" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="position: absolute; right: 14px; bottom: 14px; width: 48px; height: 48px; border-radius: 50%; border: none; background: {{accent}}; color: #05060A; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 20px {{acc.a35}}">
+<sc-if value="{{playing}}" hint-placeholder-val="{{ true }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+</sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{ false }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+</sc-if>
+</button>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">Clipforge</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">SAAS · EN DÉVELOPPEMENT</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">On importe une vidéo, l'outil repère les meilleurs moments et sort des clips 9:16 avec sous-titres animés et titre accrocheur, prêts à poster. La transcription tourne directement dans le navigateur.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Next.js</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Supabase</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Stripe</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">WebGPU</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">FFmpeg</span>
+</div>
+</div>
+</article>
+
+<article class="rpm-lift" style="display: {{show.proteo}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Vue éclatée en 3D des écrans de l'appli PROTEO. Glisser pour la faire tourner." onPointerDown="{{h3d.layers.down}}" onPointerMove="{{h3d.layers.move}}" onPointerUp="{{h3d.layers.up}}" onPointerCancel="{{h3d.layers.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 1000px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="layers" ref="{{h3d.layers.ref}}" style="position: relative; width: 0; height: 0; transform-style: preserve-3d">
+<div style="position: absolute; left: -145px; top: -125px; width: 230px; height: 170px; box-sizing: border-box; transform: translateZ(-70px); background: rgba(16,19,26,0.92); border: 1px solid #262A33; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">RECETTES</span>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 12px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #1E222A; display: block; flex-shrink: 0"></span><span>Bowl poulet et riz</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 12px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #1E222A; display: block; flex-shrink: 0"></span><span>Omelette et flocons d'avoine</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 12px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #1E222A; display: block; flex-shrink: 0"></span><span>Saumon et patate douce</span></div>
+</div>
+<div style="position: absolute; left: -115px; top: -85px; width: 230px; height: 170px; box-sizing: border-box; transform: translateZ(0px); background: #10131A; border: 1px solid {{acc.a35}}; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 18px; box-shadow: 0 0 30px {{acc.a10}}">
+<div style="width: 92px; height: 92px; border-radius: 50%; background: conic-gradient({{accent}} 0deg {{macro.deg}}deg, #24252B {{macro.deg}}deg 360deg); display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: #10131A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 8px; color: #8A8F99">OBJECTIF</span>
+<span style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 9px; text-align: center; padding: 0 4px">{{macro.label}}</span>
+</div>
+</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 5px"><span style="font-size: 11px; color: #9EA3AE">Protéines</span><span style="height: 6px; border-radius: 3px; background: #24252B; display: block; overflow: hidden"><span style="width: {{macro.p}}; height: 6px; border-radius: 3px; background: {{accent}}; display: block; transition: width 0.5s ease"></span></span></div>
+<div style="display: flex; flex-direction: column; gap: 5px"><span style="font-size: 11px; color: #9EA3AE">Glucides</span><span style="height: 6px; border-radius: 3px; background: #24252B; display: block; overflow: hidden"><span style="width: {{macro.g}}; height: 6px; border-radius: 3px; background: #EDEEF2; display: block; transition: width 0.5s ease"></span></span></div>
+<div style="display: flex; flex-direction: column; gap: 5px"><span style="font-size: 11px; color: #9EA3AE">Lipides</span><span style="height: 6px; border-radius: 3px; background: #24252B; display: block; overflow: hidden"><span style="width: {{macro.l}}; height: 6px; border-radius: 3px; background: #8A8F99; display: block; transition: width 0.5s ease"></span></span></div>
+</div>
+</div>
+<div style="position: absolute; left: -75px; top: 45px; width: 220px; box-sizing: border-box; transform: translateZ(70px); background: rgba(11,13,18,0.96); border: 1px solid {{acc.a60}}; border-radius: 14px; padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; box-shadow: 0 0 24px {{acc.a15}}">
+<span style="width: 22px; height: 22px; border-radius: 7px; background: {{accent}}; display: block; flex-shrink: 0"></span>
+<div style="display: flex; flex-direction: column; gap: 3px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: {{accent}}">COACH IA</span><span style="font-size: 12px; line-height: 1.4">Ajoute une source de protéines au dîner.</span></div>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">PROTEO</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">APP MOBILE · PROTOTYPE</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Appli fitness et nutrition pour les pratiquants de musculation : calcul des besoins, journal alimentaire, recettes ajustées aux macros, suivi du poids et coach IA.</p>
+<div role="group" aria-label="Objectif nutritionnel" style="display: flex; flex-wrap: wrap; gap: 6px; align-self: flex-start; background: #07090D; border: 1px solid #1A1D25; padding: 4px; border-radius: 999px">
+<sc-for list="{{goals}}" as="g" hint-placeholder-count="3">
+<button type="button" onClick="{{g.pick}}" aria-pressed="{{g.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: none; background: {{g.bg}}; color: {{g.fg}}; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s ease, color 0.2s ease">{{g.label}}</button>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">React Native</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Expo</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Supabase</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Claude API</span>
+</div>
+</div>
+</article>
+
+<article class="rpm-lift" style="display: {{show.stock}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Entrepôt en 3D : des caisses empilées représentent le stock de faïence. Glisser pour le faire tourner." onPointerDown="{{h3d.crates.down}}" onPointerMove="{{h3d.crates.move}}" onPointerUp="{{h3d.crates.up}}" onPointerCancel="{{h3d.crates.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 900px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="crates" ref="{{h3d.crates.ref}}" style="position: relative; width: 0; height: 0; transform-style: preserve-3d">
+<div style="position: absolute; left: -120px; top: -120px; width: 240px; height: 240px; box-sizing: border-box; transform: translateY(90px) rotateX(90deg); border: 1px solid {{acc.a35}}; background-image: linear-gradient({{acc.a15}} 1px, transparent 1px), linear-gradient(90deg, {{acc.a15}} 1px, transparent 1px); background-size: 24px 24px"></div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c1.x}}px, {{crates.c1.y}}px, {{crates.c1.z}}px) scale3d({{crates.c1.s}}, {{crates.c1.s}}, {{crates.c1.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c2.x}}px, {{crates.c2.y}}px, {{crates.c2.z}}px) scale3d({{crates.c2.s}}, {{crates.c2.s}}, {{crates.c2.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c3.x}}px, {{crates.c3.y}}px, {{crates.c3.z}}px) scale3d({{crates.c3.s}}, {{crates.c3.s}}, {{crates.c3.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c4.x}}px, {{crates.c4.y}}px, {{crates.c4.z}}px) scale3d({{crates.c4.s}}, {{crates.c4.s}}, {{crates.c4.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c5.x}}px, {{crates.c5.y}}px, {{crates.c5.z}}px) scale3d({{crates.c5.s}}, {{crates.c5.s}}, {{crates.c5.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d({{crates.c6.x}}px, {{crates.c6.y}}px, {{crates.c6.z}}px) scale3d({{crates.c6.s}}, {{crates.c6.s}}, {{crates.c6.s}}); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.25)">
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(180deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateY(-90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(90deg) translateZ(30px)"></div>
+<div style="position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; box-sizing: border-box; border: 1px solid {{cr.line}}; background: {{cr.face}}; box-shadow: inset 0 0 0 6px {{cr.inner}}; transform: rotateX(-90deg) translateZ(30px)"></div>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 14px; left: 14px; display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #B4B7C0; pointer-events: none">
+<span>FAÏENCE MURALE · {{stock.label}}</span>
+<span style="padding: 3px 8px; border-radius: 999px; background: {{stock.badgeBg}}; color: {{stock.badgeFg}}">{{stock.status}}</span>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">Gestion de stock</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">CRISTAL CERAMIC · ALTERNANCE</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Application web de gestion de stock pour une PME de carrelage : articles, alertes de seuil, mouvements d'entrée et de sortie, stock calculé à partir de l'historique et bons en PDF. Réalisée en binôme pendant mon alternance.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<button type="button" onClick="{{stock.take}}" style="min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid #262A33; background: #07090D; color: #EDEEF2; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg>Sortie de stock</button>
+<button type="button" onClick="{{stock.add}}" style="min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid #262A33; background: #07090D; color: #EDEEF2; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>Entrée de stock</button>
+</div>
+<div role="status" style="min-height: 36px; display: flex; align-items: center">
+<sc-if value="{{stock.low}}" hint-placeholder-val="{{ false }}">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; padding: 8px 12px; border-radius: 10px; background: #3A2516; color: #FFB27A; animation: rpm-fade 0.3s ease both">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"></path><path d="M12 10v4"></path><path d="M12 17.5v.5"></path></svg>
+<span>Alerte : faïence murale sous le seuil</span>
+</div>
+</sc-if>
+<sc-if value="{{stock.ok}}" hint-placeholder-val="{{ true }}">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8A8F99">{{stock.log}}</span>
+</sc-if>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Symfony 7</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">PHP</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Doctrine</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Dompdf</span>
+</div>
+</div>
+</article>
+
+<article class="rpm-lift" style="display: {{show.clipfactory}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Timeline de montage en 3D, pistes vidéo, sous-titres et musique séparées en couches. Glisser pour la faire tourner." onPointerDown="{{h3d.tracks.down}}" onPointerMove="{{h3d.tracks.move}}" onPointerUp="{{h3d.tracks.up}}" onPointerCancel="{{h3d.tracks.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 1000px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="tracks" ref="{{h3d.tracks.ref}}" style="position: relative; width: 0; height: 0; transform-style: preserve-3d">
+<div style="position: absolute; left: -140px; top: -100px; width: 280px; box-sizing: border-box; transform: translateZ(60px); background: rgba(16,19,26,0.94); border: 1px solid {{acc.a60}}; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; overflow: hidden; box-shadow: 0 0 24px {{acc.a15}}">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: {{accent}}">V1 · VIDÉO</span>
+<div style="display: flex; gap: 5px"><span style="flex: 2; height: 22px; border-radius: 5px; background: #2A2E37; display: block"></span><span style="flex: 1; height: 22px; border-radius: 5px; background: {{accent}}; display: block"></span><span style="flex: 3; height: 22px; border-radius: 5px; background: #2A2E37; display: block"></span><span style="flex: 1; height: 22px; border-radius: 5px; background: {{accent}}; display: block"></span></div>
+<span aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 2px; background: #FFFFFF; box-shadow: 0 0 10px #FFFFFF; display: block; animation: rpm-playhead 6s linear infinite"></span>
+</div>
+<div style="position: absolute; left: -140px; top: -30px; width: 280px; box-sizing: border-box; transform: translateZ(0px); background: rgba(16,19,26,0.94); border: 1px solid #262A33; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; overflow: hidden">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">T1 · SOUS-TITRES</span>
+<div style="display: flex; gap: 5px"><span style="flex: 1; height: 16px; border-radius: 4px; background: #3A3E48; display: block"></span><span style="flex: 1; height: 16px; border-radius: 4px; background: #3A3E48; display: block"></span><span style="flex: 1; height: 16px; border-radius: 4px; background: {{acc.a60}}; display: block"></span><span style="flex: 1; height: 16px; border-radius: 4px; background: #3A3E48; display: block"></span><span style="flex: 1; height: 16px; border-radius: 4px; background: #3A3E48; display: block"></span><span style="flex: 1; height: 16px; border-radius: 4px; background: #3A3E48; display: block"></span></div>
+<span aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 2px; background: #FFFFFF; display: block; animation: rpm-playhead 6s linear infinite"></span>
+</div>
+<div style="position: absolute; left: -140px; top: 40px; width: 280px; box-sizing: border-box; transform: translateZ(-60px); background: rgba(16,19,26,0.94); border: 1px solid #262A33; border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; overflow: hidden">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">A1 · MUSIQUE</span>
+<div style="display: flex; align-items: flex-end; gap: 3px; height: 22px">
+<span style="flex: 1; height: 40%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 70%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 55%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 90%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 60%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 80%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 45%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 100%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 65%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 50%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 85%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 35%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 75%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 55%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 95%; background: #3A3E48; display: block"></span><span style="flex: 1; height: 60%; background: #3A3E48; display: block"></span>
+</div>
+<span aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 2px; background: #FFFFFF; display: block; animation: rpm-playhead 6s linear infinite"></span>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">ClipFactory</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">OUTIL INTERNE</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Outil local pour produire des clips TikTok à la chaîne à partir de streams Twitch : découpe des moments forts, sous-titres dynamiques et musique, sans repasser par un logiciel de montage.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Python</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">FFmpeg</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Whisper</span>
+</div>
+</div>
+</article>
+
+<article class="rpm-lift" style="display: {{show.data}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Graphique en barres 3D illustrant un tableau de bord de données. Glisser pour le faire tourner." onPointerDown="{{h3d.bars.down}}" onPointerMove="{{h3d.bars.move}}" onPointerUp="{{h3d.bars.up}}" onPointerCancel="{{h3d.bars.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 900px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="bars" ref="{{h3d.bars.ref}}" style="position: relative; width: 0; height: 0; transform-style: preserve-3d">
+<div style="position: absolute; left: -130px; top: -100px; width: 260px; height: 200px; box-sizing: border-box; transform: translateY(80px) rotateX(90deg); border: 1px solid {{acc.a35}}; background-image: linear-gradient({{acc.a15}} 1px, transparent 1px), linear-gradient(90deg, {{acc.a15}} 1px, transparent 1px); background-size: 26px 25px"></div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(-70px, 80px, -40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-35px)">
+<div style="position: absolute; left: -20px; top: -35px; width: 40px; height: 70px; background: #3A3E48; transform: translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -35px; width: 40px; height: 70px; background: #3A3E48; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -35px; width: 40px; height: 70px; background: #2A2D35; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -35px; width: 40px; height: 70px; background: #2A2D35; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: #4B505B; transform: rotateX(90deg) translateZ(35px)"></div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(0px, 80px, -40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: 0.08s">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-60px)">
+<div style="position: absolute; left: -20px; top: -60px; width: 40px; height: 120px; background: #3A3E48; transform: translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -60px; width: 40px; height: 120px; background: #3A3E48; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -60px; width: 40px; height: 120px; background: #2A2D35; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -60px; width: 40px; height: 120px; background: #2A2D35; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: #4B505B; transform: rotateX(90deg) translateZ(60px)"></div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(70px, 80px, -40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: 0.16s">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-82px)">
+<div style="position: absolute; left: -20px; top: -82px; width: 40px; height: 164px; background: {{accent}}; transform: translateZ(20px); box-shadow: 0 0 24px {{acc.a35}}"></div>
+<div style="position: absolute; left: -20px; top: -82px; width: 40px; height: 164px; background: {{accent}}; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -82px; width: 40px; height: 164px; background: {{acc.a60}}; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -82px; width: 40px; height: 164px; background: {{acc.a60}}; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: {{acc.a80}}; transform: rotateX(90deg) translateZ(82px)"></div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(-70px, 80px, 40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: 0.24s">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-48px)">
+<div style="position: absolute; left: -20px; top: -48px; width: 40px; height: 96px; background: #3A3E48; transform: translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -48px; width: 40px; height: 96px; background: #3A3E48; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -48px; width: 40px; height: 96px; background: #2A2D35; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -48px; width: 40px; height: 96px; background: #2A2D35; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: #4B505B; transform: rotateX(90deg) translateZ(48px)"></div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(0px, 80px, 40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: 0.32s">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-28px)">
+<div style="position: absolute; left: -20px; top: -28px; width: 40px; height: 56px; background: #3A3E48; transform: translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -28px; width: 40px; height: 56px; background: #3A3E48; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -28px; width: 40px; height: 56px; background: #2A2D35; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -28px; width: 40px; height: 56px; background: #2A2D35; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: #4B505B; transform: rotateX(90deg) translateZ(28px)"></div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translate3d(70px, 80px, 40px)">
+<div style="transform-style: preserve-3d; transform-origin: 0 0; animation: rpm-grow3d 1s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: 0.4s">
+<div style="position: absolute; left: 0; top: 0; transform-style: preserve-3d; transform: translateY(-65px)">
+<div style="position: absolute; left: -20px; top: -65px; width: 40px; height: 130px; background: #3A3E48; transform: translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -65px; width: 40px; height: 130px; background: #3A3E48; transform: rotateY(180deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -65px; width: 40px; height: 130px; background: #2A2D35; transform: rotateY(90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -65px; width: 40px; height: 130px; background: #2A2D35; transform: rotateY(-90deg) translateZ(20px)"></div>
+<div style="position: absolute; left: -20px; top: -20px; width: 40px; height: 40px; background: #4B505B; transform: rotateX(90deg) translateZ(65px)"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 14px; left: 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #B4B7C0; pointer-events: none">SEGMENTATION CLIENTS</div>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">Dashboard data</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">PROJET D'ÉQUIPE · M1</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Projet de data mining sur des données alimentaires : scraping de sources ouvertes, segmentation de clients, règles d'association et page de veille qualité branchée sur RappelConso et Open Food Facts.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Python</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Scraping</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Clustering</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Dashboard</span>
+</div>
+</div>
+</article>
+
+<article class="rpm-lift" style="display: {{show.vocalio}}; flex-direction: column; gap: 22px; background: #0B0D12; border: 1px solid #1A1D25; border-radius: 22px; padding: 14px; animation: rpm-fade 0.45s ease backwards">
+<div class="rpm-stage" role="img" aria-label="Conversation en 3D entre un client et l'assistant Vocalio, qui cale un rendez-vous. Glisser pour la faire tourner." onPointerDown="{{h3d.chat.down}}" onPointerMove="{{h3d.chat.move}}" onPointerUp="{{h3d.chat.up}}" onPointerCancel="{{h3d.chat.up}}" style="position: relative; height: 380px; border-radius: 16px; background-color: #07090D; background-image: linear-gradient(#0E1117 1px, transparent 1px), linear-gradient(90deg, #0E1117 1px, transparent 1px); background-size: 28px 28px; perspective: 1000px; display: flex; align-items: center; justify-content: center; overflow: hidden; touch-action: none; user-select: none">
+<div data-rpm-obj="chat" ref="{{h3d.chat.ref}}" style="position: relative; width: 290px; box-sizing: border-box; transform-style: preserve-3d; background: #0B0D12; border: 1px solid #262A33; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #8A8F99">
+<span>VOCALIO · ASSISTANT</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; color: {{accent}}"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; display: inline-block"></span>EN LIGNE</span>
+</div>
+<div style="position: relative; display: flex; justify-content: flex-start; transform: translateZ(26px)">
+<div style="max-width: 82%; background: #1E222A; padding: 10px 13px; border-radius: 14px 14px 14px 4px; font-size: 13px; line-height: 1.45; opacity: {{chat.s1.bo}}; transform: translateY({{chat.s1.by}}px); transition: opacity 0.35s ease, transform 0.35s ease">Bonjour, j'ai une fuite sous l'évier, vous pouvez passer quand ?</div>
+<div aria-hidden="true" style="position: absolute; left: 0; top: 0; background: #1E222A; padding: 13px 14px; border-radius: 14px; display: flex; gap: 5px; opacity: {{chat.s1.to}}; transition: opacity 0.2s ease">
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.15s"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.3s"></span>
+</div>
+</div>
+<div style="position: relative; display: flex; justify-content: flex-end; transform: translateZ(44px)">
+<div style="max-width: 82%; background: {{accent}}; color: #05060A; padding: 10px 13px; border-radius: 14px 14px 4px 14px; font-size: 13px; line-height: 1.45; box-shadow: 0 0 22px {{acc.a35}}; opacity: {{chat.s2.bo}}; transform: translateY({{chat.s2.by}}px); transition: opacity 0.35s ease, transform 0.35s ease">Je vous propose jeudi matin ou vendredi après-midi. Lequel vous arrange ?</div>
+<div aria-hidden="true" style="position: absolute; right: 0; top: 0; background: {{accent}}; padding: 13px 14px; border-radius: 14px; display: flex; gap: 5px; opacity: {{chat.s2.to}}; transition: opacity 0.2s ease">
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #05060A; display: inline-block; animation: rpm-dot 1s ease-in-out infinite"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #05060A; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.15s"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #05060A; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.3s"></span>
+</div>
+</div>
+<div style="position: relative; display: flex; justify-content: flex-start; transform: translateZ(26px)">
+<div style="max-width: 82%; background: #1E222A; padding: 10px 13px; border-radius: 14px 14px 14px 4px; font-size: 13px; line-height: 1.45; opacity: {{chat.s3.bo}}; transform: translateY({{chat.s3.by}}px); transition: opacity 0.35s ease, transform 0.35s ease">Jeudi c'est parfait.</div>
+<div aria-hidden="true" style="position: absolute; left: 0; top: 0; background: #1E222A; padding: 13px 14px; border-radius: 14px; display: flex; gap: 5px; opacity: {{chat.s3.to}}; transition: opacity 0.2s ease">
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.15s"></span>
+<span style="width: 6px; height: 6px; border-radius: 50%; background: #9EA3AE; display: inline-block; animation: rpm-dot 1s ease-in-out infinite; animation-delay: 0.3s"></span>
+</div>
+</div>
+<div style="display: flex; justify-content: flex-end; transform: translateZ(60px)">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #D4D6DC; background: #05060A; border: 1px solid {{acc.a60}}; padding: 8px 12px; border-radius: 999px; opacity: {{chat.s4.bo}}; transform: translateY({{chat.s4.by}}px); transition: opacity 0.35s ease, transform 0.35s ease">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 3v4"></path><path d="M16 3v4"></path></svg>
+<span>RDV ajouté à l'agenda : jeudi matin</span>
+</div>
+</div>
+</div>
+<button type="button" onClick="{{chat.replay}}" aria-label="Rejouer la démo" style="position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid #262A33; background: #0B0D12; color: #EDEEF2; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg>
+</button>
+<div aria-hidden="true" style="position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; pointer-events: none">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg>
+<span>GLISSER POUR TOURNER</span>
+</div>
+</div>
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px">
+<h3 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em">Vocalio</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8F99; border: 1px solid #262A33; padding: 6px 10px; border-radius: 999px">ASSISTANT IA · EN COURS</span>
+</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 16px; line-height: 1.6">Assistant IA pour artisans du bâtiment et garages : il répond aux demandes des clients et cale les rendez-vous directement dans l'agenda de l'artisan.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B4B7C0">
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Claude API</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">n8n</span>
+<span style="background: #12151C; border: 1px solid #1E222A; padding: 6px 10px; border-radius: 8px">Google Agenda</span>
+</div>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="parcours" style="padding: 96px 0; border-top: 1px solid #1A1D25; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[04] PARCOURS</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(28px, 3.8vw, 48px); letter-spacing: -0.03em; line-height: 1.1">Formé sur le terrain.</h2>
+<p style="margin: 0; color: #9EA3AE; font-size: 17px; line-height: 1.6; max-width: 380px">Aujourd'hui développeur, après plusieurs années d'alternance et un cursus informatique poursuivi jusqu'en master.</p>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; border-left: 1px solid #1A1D25; padding-left: 28px">
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #1A1D25">
+<span aria-hidden="true" style="position: absolute; left: -34px; top: 32px; width: 11px; height: 11px; background: {{accent}}; transform: rotate(45deg); box-shadow: 0 0 14px {{accent}}"></span>
+<div style="flex: 0 0 170px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: {{accent}}">2026</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Développeur — ARONDOR</div>
+<div style="color: #9EA3AE; font-size: 15px; line-height: 1.6">Cabinet de conseil IT spécialisé en gestion documentaire et en IA.</div>
+</div>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #1A1D25">
+<span aria-hidden="true" style="position: absolute; left: -33px; top: 33px; width: 9px; height: 9px; background: #05060A; border: 1px solid #4A4E58; transform: rotate(45deg)"></span>
+<div style="flex: 0 0 170px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8F99">2025</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Alternant data engineering et IA — ARONDOR</div>
+<div style="color: #9EA3AE; font-size: 15px; line-height: 1.6">Automatisation du déploiement d'une solution d'IA documentaire avec Ansible, en parallèle du M2 Informatique à Sup de Vinci (titre de niveau 7, data engineering et intelligence artificielle).</div>
+</div>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #1A1D25">
+<span aria-hidden="true" style="position: absolute; left: -33px; top: 33px; width: 9px; height: 9px; background: #05060A; border: 1px solid #4A4E58; transform: rotate(45deg)"></span>
+<div style="flex: 0 0 170px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8F99">2024</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">M1 Informatique — Sup de Vinci</div>
+<div style="color: #9EA3AE; font-size: 15px; line-height: 1.6">Première année de master, spécialité data engineering et intelligence artificielle.</div>
+</div>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid #1A1D25">
+<span aria-hidden="true" style="position: absolute; left: -33px; top: 33px; width: 9px; height: 9px; background: #05060A; border: 1px solid #4A4E58; transform: rotate(45deg)"></span>
+<div style="flex: 0 0 170px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8F99">2023</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Développeur en alternance — Cristal Ceramic</div>
+<div style="color: #9EA3AE; font-size: 15px; line-height: 1.6">Conception et développement de l'application de gestion de stock de l'entreprise, en binôme.</div>
+</div>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 26px 0">
+<span aria-hidden="true" style="position: absolute; left: -33px; top: 33px; width: 9px; height: 9px; background: #05060A; border: 1px solid #4A4E58; transform: rotate(45deg)"></span>
+<div style="flex: 0 0 170px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8F99">2022</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Bachelor Coordinateur de projets informatiques</div>
+<div style="color: #9EA3AE; font-size: 15px; line-height: 1.6">Sup de Vinci, après un BTS au lycée Robert Schuman de Dugny.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 96px 0; border-top: 1px solid #1A1D25; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[05] MÉTHODE</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(28px, 3.8vw, 48px); letter-spacing: -0.03em; line-height: 1.1">Simple, de A à Z.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px">
+<div class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="background: #0B0D12; border: 1px solid #1A1D25; border-top: 2px solid {{accent}}; border-radius: 4px 4px 16px 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{accent}}">STEP_01</div>
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">On cadre le besoin</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 15px; line-height: 1.6">Un échange court pour comprendre l'objectif, le délai et le budget. Devis clair, sans surprise.</p>
+</div>
+<div class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="background: #0B0D12; border: 1px solid #1A1D25; border-top: 2px solid #343842; border-radius: 4px 4px 16px 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8A8F99">STEP_02</div>
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Vous voyez avant</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 15px; line-height: 1.6">Maquette, premier montage ou démo : vous validez la direction avant que je lance le gros du travail.</p>
+</div>
+<div class="rpm-tilt" onPointerMove="{{tiltMove}}" onPointerLeave="{{tiltLeave}}" style="background: #0B0D12; border: 1px solid #1A1D25; border-top: 2px solid #343842; border-radius: 4px 4px 16px 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8A8F99">STEP_03</div>
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Livraison et retouches</div>
+<p style="margin: 0; color: #9EA3AE; font-size: 15px; line-height: 1.6">Livraison dans les délais convenus, retours intégrés, et je reste joignable après la mise en ligne.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" style="position: relative; margin: 48px 0 0; padding: clamp(28px, 5vw, 64px); border-radius: 8px; background: #0B0D12; border: 1px solid {{acc.a35}}; box-shadow: 0 0 80px {{acc.a10}}; display: flex; flex-wrap: wrap; gap: 48px">
+<span aria-hidden="true" style="position: absolute; top: -1px; left: -1px; width: 22px; height: 22px; border-top: 2px solid {{accent}}; border-left: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; top: -1px; right: -1px; width: 22px; height: 22px; border-top: 2px solid {{accent}}; border-right: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; bottom: -1px; left: -1px; width: 22px; height: 22px; border-bottom: 2px solid {{accent}}; border-left: 2px solid {{accent}}"></span>
+<span aria-hidden="true" style="position: absolute; bottom: -1px; right: -1px; width: 22px; height: 22px; border-bottom: 2px solid {{accent}}; border-right: 2px solid {{accent}}"></span>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: {{accent}}">[06] CONTACT</div>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: clamp(32px, 3.6vw, 52px); letter-spacing: -0.04em; line-height: 1.05"><span style="white-space: nowrap">Un projet&nbsp;?</span><br><span style="white-space: nowrap; color: {{accent}}; text-shadow: 0 0 32px {{acc.a35}}">Parlons-en.</span></h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 420px; color: #9EA3AE">Choisissez quelques options : votre demande est prête à partir en un clic.</p>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: auto">
+<a href="https://www.fiverr.com/slmbyy" target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; min-height: 52px; padding: 0 20px; border-radius: 12px; border: 1px solid #262A33; color: #EDEEF2; text-decoration: none; font-weight: 600; font-size: 15px">Fiverr
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>
+</a>
+</div>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; background: #05060A; border: 1px solid #1A1D25; color: #EDEEF2; border-radius: 16px; padding: clamp(20px, 3vw, 30px); display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<div style="font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 18px">Configurez votre demande</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8F99">REQ.BUILDER</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">VOTRE BESOIN</div>
+<div role="group" aria-label="Votre besoin" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{needs}}" as="n" hint-placeholder-count="4">
+<button type="button" onClick="{{n.pick}}" aria-pressed="{{n.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid {{n.bd}}; background: {{n.bg}}; color: {{n.fg}}; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease">{{n.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">DÉLAI</div>
+<div role="group" aria-label="Délai" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{delays}}" as="d" hint-placeholder-count="3">
+<button type="button" onClick="{{d.pick}}" aria-pressed="{{d.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid {{d.bd}}; background: {{d.bg}}; color: {{d.fg}}; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease">{{d.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">BUDGET</div>
+<div role="group" aria-label="Budget" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{budgets}}" as="b" hint-placeholder-count="4">
+<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid {{b.bd}}; background: {{b.bg}}; color: {{b.fg}}; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease">{{b.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<label for="rpm-note" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">VOTRE PROJET EN UNE PHRASE</label>
+<textarea id="rpm-note" value="{{note}}" onChange="{{onNote}}" placeholder="Ex. : monter 4 shorts par semaine à partir de mes lives Twitch" style="min-height: 96px; width: 100%; box-sizing: border-box; resize: vertical; padding: 14px 16px; border-radius: 12px; border: 1px solid #262A33; background: #0B0D12; color: #EDEEF2; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.5"></textarea>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding-top: 20px; border-top: 1px solid #1A1D25">
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">RÉCAPITULATIF</span>
+<span style="font-size: 15px; color: #EDEEF2">{{summary}}</span>
+</div>
+<a href="{{mailto}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: {{accent}}; color: #05060A; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 0 26px {{acc.a35}}">Envoyer la demande
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+<div style="font-size: 14px; color: #9EA3AE">Ou écrivez directement à <a href="mailto:{{email}}" style="color: #EDEEF2">{{email}}</a></div>
+</div>
+</section>
+
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding: 40px 0 48px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #8A8F99">
+<span>© 2026 CUTCODE · RAYANE MENKAR</span>
+<span>MICRO-ENTREPRISE · SIRET EN COURS D'ATTRIBUTION</span>
+</footer>
+
+</div>
+</div>
+</template>
+<script>/*! Preact 10.29.8 | (c) 2015-present Jason Miller | MIT License */
+!function(){var n,t,e,r,i,o,f,u,c,a,s,h,l,p,y,v,d,_="http://www.w3.org/2000/svg",w="http://www.w3.org/1999/xhtml",m=null,g=void 0,b={},k=[],x=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,C=Array.isArray;function M(n,t){for(var e in t)n[e]=t[e];return n}function S(n){n&&n.parentNode&&n.parentNode.removeChild(n)}function $(t,e,r){var i,o,f,u={};for(f in e)"key"==f?i=e[f]:"ref"==f?o=e[f]:u[f]=e[f];if(arguments.length>2&&(u.children=arguments.length>3?n.call(arguments,2):r),"function"==typeof t&&t.defaultProps!=m)for(f in t.defaultProps)u[f]===g&&(u[f]=t.defaultProps[f]);return A(t,u,i,o,m)}function A(n,r,i,o,f){var u={type:n,props:r,key:i,ref:o,__k:m,__:m,__b:0,__e:m,__c:m,constructor:g,__v:f==m?++e:f,__i:-1,__u:0};return f==m&&t.vnode!=m&&t.vnode(u),u}function I(n){return n.children}function P(n,t){this.props=n,this.context=t}function E(n,t){if(t==m)return n.__?E(n.__,n.__i+1):m;for(var e;t<n.__k.length;t++)if((e=n.__k[t])!=m&&e.__e!=m)return e.__e;return"function"==typeof n.type?E(n):m}function F(n){if(n.__P&&n.__d){var e=n.__v,r=e.__e,i=[],o=[],f=M({},e);f.__v=e.__v+1,t.vnode&&t.vnode(f),B(n.__P,f,e,n.__n,n.__P.namespaceURI,32&e.__u?[r]:m,i,r==m?E(e):r,!!(32&e.__u),o),f.__v=e.__v,f.__.__k[f.__i]=f,G(i,f,o),e.__e=e.__=null,f.__e!=r&&H(f)}}function H(n){if((n=n.__)!=m&&n.__c!=m)return n.__e=n.__c.base=m,n.__k.some(function(t){if(t!=m&&t.__e!=m)return n.__e=n.__c.base=t.__e}),H(n)}function L(n){(!n.__d&&(n.__d=!0)&&i.push(n)&&!T.__r++||o!=t.debounceRendering)&&((o=t.debounceRendering)||f)(T)}function T(){try{for(var n,t=1;i.length;)i.length>t&&i.sort(u),n=i.shift(),t=i.length,F(n)}finally{i.length=T.__r=0}}function j(n,t,e,r,i,o,f,u,c,a,s){var h,l,p,y,v,d,_=r&&r.__k||k,w=t.length;for(c=O(e,t,_,c,w),h=0;h<w;h++)(p=e.__k[h])!=m&&(l=-1!=p.__i&&_[p.__i]||b,p.__i=h,d=B(n,p,l,i,o,f,u,c,a,s),y=p.__e,p.ref&&l.ref!=p.ref&&(l.ref&&Q(l.ref,m,p),s.push(p.ref,p.__c||y,p)),v==m&&y!=m&&(v=y),4&p.__u?(c=V(p,c,n),l.__e&&(l.__e=m)):"function"==typeof p.type&&d!==g?c=d:y&&(c=y.nextSibling),p.__u&=-7);return e.__e=v,c}function O(n,t,e,r,i){var o,f,u,c,a,s=e.length,h=s,l=0;for(n.__k=new Array(i),o=0;o<i;o++)(f=t[o])!=m&&"boolean"!=typeof f&&"function"!=typeof f?("string"==typeof f||"number"==typeof f||"bigint"==typeof f||f.constructor==String?f=n.__k[o]=A(m,f,m,m,m):C(f)?f=n.__k[o]=A(I,{children:f},m,m,m):f.constructor===g&&f.__b>0?f=n.__k[o]=A(f.type,f.props,f.key,f.ref?f.ref:m,f.__v):n.__k[o]=f,c=o+l,f.__=n,f.__b=n.__b+1,a=f.__i=z(f,e,c,h),u=m,-1!=a&&(h--,(u=e[a])&&(u.__u|=2)),u==m||u.__v==m?(-1==a&&(i>s?l--:i<s&&l++),"function"!=typeof f.type&&(f.__u|=4)):a!=c&&(a==c-1?l--:a==c+1?l++:(a>c?l--:l++,f.__u|=4))):n.__k[o]=m;if(h)for(o=0;o<s;o++)(u=e[o])!=m&&0==(2&u.__u)&&(u.__e==r&&(r=E(u)),U(u,u));return r}function V(n,t,e){var r,i;if("function"==typeof n.type){for(r=n.__k,i=0;r&&i<r.length;i++)r[i]&&(r[i].__=n,t=V(r[i],t,e));return t}n.__e!=t&&(t&&n.type&&!t.parentNode&&(t=E(n)),t=e.insertBefore(n.__e,t||m));do{t=t&&t.nextSibling}while(t!=m&&8==t.nodeType);return t}function z(n,t,e,r){var i,o,f,u=n.key,c=n.type,a=t[e],s=a!=m&&0==(2&a.__u);if(a===m&&null==u||s&&u==a.key&&c==a.type)return e;if(r>(s?1:0))for(i=e-1,o=e+1;i>=0||o<t.length;)if((a=t[f=i>=0?i--:o++])!=m&&0==(2&a.__u)&&u==a.key&&c==a.type)return f;return-1}function N(n,t,e){"-"==t[0]?n.setProperty(t,e==m?"":e):n[t]=e==m?"":"number"!=typeof e||x.test(t)?e:e+"px"}function R(n,t,e,r,i){var o,f;n:if("style"==t)if("string"==typeof e)n.style.cssText=e;else{if("string"==typeof r&&(n.style.cssText=r=""),r)for(t in r)e&&t in e||N(n.style,t,"");if(e)for(t in e)r&&e[t]==r[t]||N(n.style,t,e[t])}else if("o"==t[0]&&"n"==t[1])o=t!=(t=t.replace(h,"$1")),f=t.toLowerCase(),t=f in n||"onFocusOut"==t||"onFocusIn"==t?f.slice(2):t.slice(2),n.l||(n.l={}),n.l[t+o]=e,e?r?e[s]=r[s]:(e[s]=l,n.addEventListener(t,o?y:p,o)):n.removeEventListener(t,o?y:p,o);else{if(i==_)t=t.replace(/xlink(H|:h)/,"h").replace(/sName$/,"s");else if("width"!=t&&"height"!=t&&"href"!=t&&"list"!=t&&"form"!=t&&"tabIndex"!=t&&"download"!=t&&"rowSpan"!=t&&"colSpan"!=t&&"role"!=t&&"popover"!=t&&t in n)try{n[t]=e==m?"":e;break n}catch(n){}"function"==typeof e||(e==m||!1===e&&"-"!=t[4]?n.removeAttribute(t):n.setAttribute(t,"popover"==t&&1==e?"":e))}}function q(n){return function(e){if(this.l){var r=this.l[e.type+n];if(e[a]==m)e[a]=l++;else if(e[a]<r[s])return;return r(t.event?t.event(e):e)}}}function B(n,e,r,i,o,f,u,c,a,s){var h,l,p,y,v,d,_,w,b,x,$,A,F,H,L,T,O=e.type;if(e.constructor!==g)return m;128&r.__u&&(a=!!(32&r.__u),f=[c=e.__e=r.__e]),(h=t.__b)&&h(e);n:if("function"==typeof O){l=u.length;try{if(b=e.props,x=O.prototype&&O.prototype.render,$=(h=O.contextType)&&i[h.__c],A=h?$?$.props.value:h.__:i,r.__c?w=(p=e.__c=r.__c).__=p.__E:(x?e.__c=p=new O(b,A):(e.__c=p=new P(b,A),p.constructor=O,p.render=W),$&&$.sub(p),p.state||(p.state={}),p.__n=i,y=p.__d=!0,p.__h=[],p._sb=[]),x&&p.__s==m&&(p.__s=p.state),x&&O.getDerivedStateFromProps!=m&&(p.__s==p.state&&(p.__s=M({},p.__s)),M(p.__s,O.getDerivedStateFromProps(b,p.__s))),v=p.props,d=p.state,p.__v=e,y)x&&O.getDerivedStateFromProps==m&&p.componentWillMount!=m&&p.componentWillMount(),x&&p.componentDidMount!=m&&p.__h.push(p.componentDidMount);else{if(x&&O.getDerivedStateFromProps==m&&b!==v&&p.componentWillReceiveProps!=m&&p.componentWillReceiveProps(b,A),e.__v==r.__v||!p.__e&&p.shouldComponentUpdate!=m&&!1===p.shouldComponentUpdate(b,p.__s,A)){e.__v!=r.__v&&(p.props=b,p.state=p.__s,p.__d=!1),e.__e=r.__e,e.__k=r.__k,e.__k.some(function(n){n&&(n.__=e)}),k.push.apply(p.__h,p._sb),p._sb=[],p.__h.length&&u.push(p),c=E(r);break n}p.componentWillUpdate!=m&&p.componentWillUpdate(b,p.__s,A),x&&p.componentDidUpdate!=m&&p.__h.push(function(){p.componentDidUpdate(v,d,_)})}if(p.context=A,p.props=b,p.__P=n,p.__e=!1,F=t.__r,H=0,x)p.state=p.__s,p.__d=!1,F&&F(e),h=p.render(p.props,p.state,p.context),k.push.apply(p.__h,p._sb),p._sb=[];else do{p.__d=!1,F&&F(e),h=p.render(p.props,p.state,p.context),p.state=p.__s}while(p.__d&&++H<25);p.state=p.__s,p.getChildContext!=m&&(i=M(M({},i),p.getChildContext())),x&&!y&&p.getSnapshotBeforeUpdate!=m&&(_=p.getSnapshotBeforeUpdate(v,d)),L=h!=m&&h.type===I&&h.key==m?J(h.props.children):h,c=j(n,C(L)?L:[L],e,r,i,o,f,u,c,a,s),p.base=e.__e,e.__u&=-161,p.__h.length&&u.push(p),w&&(p.__E=p.__=m)}catch(n){if(u.length=l,e.__v=m,a||f!=m){if(n.then){for(e.__u|=a?160:128;c&&8==c.nodeType&&c.nextSibling;)c=c.nextSibling;f!=m&&(f[f.indexOf(c)]=m),e.__e=c}else if(f!=m)for(T=f.length;T--;)S(f[T])}else e.__e=r.__e;e.__k==m&&(e.__k=r.__k||[]),n.then||D(e),t.__e(n,e,r)}}else f==m&&e.__v==r.__v?(e.__k=r.__k,e.__e=r.__e):c=e.__e=K(r.__e,e,r,i,o,f,u,a,s);return(h=t.diffed)&&h(e),128&e.__u?void 0:c}function D(n){n&&(n.__c&&(n.__c.__e=!0),n.__k&&n.__k.some(D))}function G(n,e,r){for(var i=0;i<r.length;i++)Q(r[i],r[++i],r[++i]);t.__c&&t.__c(e,n),n.some(function(e){try{n=e.__h,e.__h=[],n.some(function(n){n.call(e)})}catch(n){t.__e(n,e.__v)}})}function J(n){return"object"!=typeof n||n==m||n.__b>0?n:C(n)?n.map(J):n.constructor!==g?null:M({},n)}function K(e,r,i,o,f,u,c,a,s){var h,l,p,y,v,d,k,x=i.props||b,M=r.props,$=r.type;if("svg"==$?f=_:"math"==$?f="http://www.w3.org/1998/Math/MathML":f||(f=w),u!=m)for(h=0;h<u.length;h++)if((v=u[h])&&"setAttribute"in v==!!$&&($?v.localName==$:3==v.nodeType)){e=v,u[h]=m;break}if(e==m){if($==m)return document.createTextNode(M);e=document.createElementNS(f,$,M.is&&M),a&&(t.__m&&t.__m(r,u),a=!1),u=m}if($==m)x===M||a&&e.data==M||(e.data=M);else{if(u="textarea"==$&&M.defaultValue!=m?m:u&&n.call(e.childNodes),!a&&u!=m)for(x={},h=0;h<e.attributes.length;h++)x[(v=e.attributes[h]).name]=v.value;for(h in x)v=x[h],"dangerouslySetInnerHTML"==h?p=v:"children"==h||h in M||"value"==h&&"defaultValue"in M||"checked"==h&&"defaultChecked"in M||R(e,h,m,v,f);for(h in M)v=M[h],"children"==h?y=v:"dangerouslySetInnerHTML"==h?l=v:"value"==h?d=v:"checked"==h?k=v:a&&"function"!=typeof v||x[h]===v||R(e,h,v,x[h],f);if(l)a||p&&(l.__html==p.__html||l.__html==e.innerHTML)||(e.innerHTML=l.__html),r.__k=[];else if(p&&(e.innerHTML=""),j("template"==r.type?e.content:e,C(y)?y:[y],r,i,o,"foreignObject"==$?w:f,u,c,u?u[0]:i.__k&&E(i,0),a,s),u!=m)for(h=u.length;h--;)S(u[h]);a&&"textarea"!=$||(h="value","progress"==$&&d==m?e.removeAttribute("value"):d!=g&&(d!==e[h]||"progress"==$&&!d||"option"==$&&d!=x[h])&&R(e,h,d,x[h],f),h="checked",k!=g&&k!=e[h]&&R(e,h,k,x[h],f))}return e}function Q(n,e,r){try{if("function"==typeof n){var i="function"==typeof n.__u;i&&n.__u(),i&&e==m||(n.__u=n(e))}else n.current=e}catch(n){t.__e(n,r)}}function U(n,e,r){var i,o;if(t.unmount&&t.unmount(n),(i=n.ref)&&(i.current&&i.current!=n.__e||Q(i,m,e)),(i=n.__c)!=m){if(i.componentWillUnmount)try{i.componentWillUnmount()}catch(n){t.__e(n,e)}i.base=i.__P=i.__n=m}if(i=n.__k)for(o=0;o<i.length;o++)i[o]&&U(i[o],e,r||"function"!=typeof n.type);r||S(n.__e),n.__c=n.__=n.__e=g}function W(n,t,e){return this.constructor(n,e)}function X(e,r,i){var o,f,u,c;r==document&&(r=document.documentElement),t.__&&t.__(e,r),f=(o="function"==typeof i)?m:i&&i.__k||r.__k,u=[],c=[],B(r,e=(!o&&i||r).__k=$(I,m,[e]),f||b,b,r.namespaceURI,!o&&i?[i]:f?m:r.firstChild?n.call(r.childNodes):m,u,!o&&i?i:f?f.__e:r.firstChild,o,c),G(u,e,c),e.props.children=m}n=k.slice,t={__e:function(n,t,e,r){for(var i,o,f;t=t.__;)if((i=t.__c)&&!i.__)try{if((o=i.constructor)&&o.getDerivedStateFromError!=m&&(i.setState(o.getDerivedStateFromError(n)),f=i.__d),i.componentDidCatch!=m&&(i.componentDidCatch(n,r||{}),f=i.__d),f)return i.__E=i}catch(t){n=t}throw n}},e=0,r=function(n){return n!=m&&n.constructor===g},P.prototype.setState=function(n,t){var e;e=this.__s!=m&&this.__s!=this.state?this.__s:this.__s=M({},this.state),"function"==typeof n&&(n=n(M({},e),this.props)),n&&M(e,n),n!=m&&this.__v&&(t&&this._sb.push(t),L(this))},P.prototype.forceUpdate=function(n){this.__v&&(this.__e=!0,n&&this.__h.push(n),L(this))},P.prototype.render=I,i=[],f="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,u=function(n,t){return n.__v.__b-t.__v.__b},T.__r=0,c=Math.random().toString(8),a="__d"+c,s="__a"+c,h=/(PointerCapture)$|Capture$/i,l=0,p=q(!1),y=q(!0),v=0,d={__proto__:null,render:X,hydrate:function n(t,e){X(t,e,n)},createElement:$,h:$,Fragment:I,createRef:function(){return{current:m}},isValidElement:r,Component:P,cloneElement:function(t,e,r){var i,o,f,u,c=M({},t.props);for(f in t.type&&t.type.defaultProps&&(u=t.type.defaultProps),e)"key"==f?i=e[f]:"ref"==f?o=e[f]:c[f]=e[f]===g&&u!=g?u[f]:e[f];return arguments.length>2&&(c.children=arguments.length>3?n.call(arguments,2):r),A(t.type,c,i||t.key,o||t.ref,m)},createContext:function(n){function t(n){var e,r;return this.getChildContext||(e=new Set,(r={})[t.__c]=this,this.getChildContext=function(){return r},this.componentWillUnmount=function(){e=m},this.shouldComponentUpdate=function(n){this.props.value!=n.value&&e.forEach(function(n){n.__e=!0,L(n)})},this.sub=function(n){e.add(n);var t=n.componentWillUnmount;n.componentWillUnmount=function(){e&&e.delete(n),t&&t.call(n)}}),n.children}return t.__c="__cC"+v++,t.__=n,t.Provider=t.__l=(t.Consumer=function(n,t){return n.children(t)}).contextType=t,t},toChildArray:function n(t,e){return e=e||[],t==m||"boolean"==typeof t||(C(t)?t.some(function(t){n(t,e)}):e.push(t)),e},options:t},typeof module<"u"?module.exports=d:self.preact=d}();</script>
+<script>
+/* Cutcode — mini runtime : interprète le balisage {{trous}} / sc-for / sc-if avec Preact */
+(function () {
+  'use strict';
+  var P = window.preact;
+  var h = P.h;
+
+  var HOLE_RE = /\{\{\s*([^{}]*?)\s*\}\}/g;
+  var SINGLE_RE = /^\s*\{\{\s*([^{}]*?)\s*\}\}\s*$/;
+  var BOOL_ATTRS = {
+    autoplay: 1, muted: 1, loop: 1, controls: 1, disabled: 1, checked: 1, hidden: 1, open: 1,
+    multiple: 1, selected: 1, required: 1, readonly: 1, autofocus: 1, novalidate: 1,
+    playsinline: 1, allowfullscreen: 1, inert: 1, reversed: 1
+  };
+
+  function get(scope, path) {
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    if (path === 'null') return null;
+    if (/^-?\d+(\.\d+)?$/.test(path)) return parseFloat(path);
+    if (/^'.*'$|^".*"$/.test(path)) return path.slice(1, -1);
+    var v = scope;
+    var keys = path.split('.');
+    for (var i = 0; i < keys.length; i++) {
+      if (v == null) return undefined;
+      v = v[keys[i]];
+    }
+    return v;
+  }
+
+  // null = valeur statique ; sinon fonction(scope) -> valeur
+  function compileValue(str, raw) {
+    if (str.indexOf('{{') < 0) return null;
+    var single = SINGLE_RE.exec(str);
+    if (raw && single) {
+      var p0 = single[1];
+      return function (s) { return get(s, p0); };
+    }
+    var parts = [];
+    var last = 0;
+    var m;
+    HOLE_RE.lastIndex = 0;
+    while ((m = HOLE_RE.exec(str))) {
+      if (m.index > last) parts.push(str.slice(last, m.index));
+      parts.push({ p: m[1] });
+      last = HOLE_RE.lastIndex;
+    }
+    if (last < str.length) parts.push(str.slice(last));
+    return function (s) {
+      var out = '';
+      for (var i = 0; i < parts.length; i++) {
+        var x = parts[i];
+        if (typeof x === 'string') out += x;
+        else {
+          var v = get(s, x.p);
+          out += v == null || v === false ? '' : String(v);
+        }
+      }
+      return out;
+    };
+  }
+
+  function camel(k) {
+    if (k.charAt(0) === '-') return k;
+    return k.replace(/-([a-z])/g, function (_, c) { return c.toUpperCase(); });
+  }
+
+  function parseStyle(str) {
+    var out = {};
+    var depth = 0, q = null, cur = '', decls = [];
+    for (var i = 0; i < str.length; i++) {
+      var ch = str.charAt(i);
+      if (q) { if (ch === q) q = null; cur += ch; continue; }
+      if (ch === '"' || ch === "'") { q = ch; cur += ch; continue; }
+      if (ch === '(') depth++;
+      else if (ch === ')') depth--;
+      if (ch === ';' && depth === 0) { decls.push(cur); cur = ''; continue; }
+      cur += ch;
+    }
+    decls.push(cur);
+    for (var j = 0; j < decls.length; j++) {
+      var d = decls[j];
+      var c = d.indexOf(':');
+      if (c < 0) continue;
+      var k = d.slice(0, c).trim();
+      var v = d.slice(c + 1).trim();
+      if (!k) continue;
+      out[k.indexOf('--') === 0 ? k : camel(k.toLowerCase())] = v;
+    }
+    return out;
+  }
+
+  function propName(tag, name) {
+    if (name === 'onchange' && (tag === 'input' || tag === 'textarea')) return 'oninput';
+    return name;
+  }
+
+  function renderChildren(kids, scope) {
+    var out = [];
+    for (var i = 0; i < kids.length; i++) {
+      var r = kids[i](scope);
+      if (r == null) continue;
+      if (Array.isArray(r)) { for (var j = 0; j < r.length; j++) out.push(r[j]); }
+      else out.push(r);
+    }
+    return out;
+  }
+
+  function compileChildren(nodes) {
+    var out = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var c = compileNode(nodes[i]);
+      if (c) out.push(c);
+    }
+    return out;
+  }
+
+  function compileNode(n) {
+    if (n.nodeType === 3) {
+      var t = n.nodeValue;
+      if (!t) return null;
+      var tf = compileValue(t, true);
+      return tf || function () { return t; };
+    }
+    if (n.nodeType !== 1) return null;
+    var tag = n.localName;
+    if (tag === 'helmet' || tag === 'script') return null;
+
+    if (tag === 'sc-for') {
+      var listF = compileValue(n.getAttribute('list') || '', true);
+      var as = n.getAttribute('as') || 'item';
+      var fkids = compileChildren(n.childNodes);
+      return function (scope) {
+        var arr = listF ? listF(scope) : null;
+        if (!arr || !arr.length) return null;
+        var out = [];
+        for (var i = 0; i < arr.length; i++) {
+          var s = Object.create(scope);
+          s[as] = arr[i];
+          var r = renderChildren(fkids, s);
+          for (var j = 0; j < r.length; j++) out.push(r[j]);
+        }
+        return out;
+      };
+    }
+
+    if (tag === 'sc-if') {
+      var vf = compileValue(n.getAttribute('value') || '', true);
+      var ikids = compileChildren(n.childNodes);
+      return function (scope) { return vf && vf(scope) ? renderChildren(ikids, scope) : null; };
+    }
+
+    var statics = {};
+    var dyn = [];
+    var attrs = n.attributes;
+    for (var a = 0; a < attrs.length; a++) {
+      var name = attrs[a].name;
+      var val = attrs[a].value;
+      if (name.indexOf('hint-') === 0) continue;
+      var pn = propName(tag, name);
+      if (name === 'style') {
+        var sf = compileValue(val, false);
+        if (sf) dyn.push([pn, (function (f) { return function (s) { return parseStyle(f(s)); }; })(sf)]);
+        else statics[pn] = parseStyle(val);
+        continue;
+      }
+      var f = compileValue(val, true);
+      if (f) dyn.push([pn, f]);
+      else statics[pn] = val === '' && BOOL_ATTRS[name] ? true : val;
+    }
+    var kids = tag === 'textarea' ? [] : compileChildren(n.childNodes);
+    return function (scope) {
+      var props = {};
+      for (var k in statics) props[k] = statics[k];
+      for (var i = 0; i < dyn.length; i++) props[dyn[i][0]] = dyn[i][1](scope);
+      return h.apply(null, [tag, props].concat(renderChildren(kids, scope)));
+    };
+  }
+
+  // Classe de base attendue par le composant
+  function DCLogic(props) {
+    this.props = props || {};
+    this.state = {};
+  }
+  DCLogic.prototype.setState = function (patch, cb) {
+    var p = typeof patch === 'function' ? patch(this.state || {}, this.props) : patch;
+    if (p == null) return;
+    var next = {};
+    var k;
+    for (k in this.state) next[k] = this.state[k];
+    for (k in p) next[k] = p[k];
+    this.state = next;
+    if (this.__host) this.__host.forceUpdate(cb);
+  };
+  DCLogic.prototype.forceUpdate = function (cb) {
+    if (this.__host) this.__host.forceUpdate(cb);
+  };
+  window.DCLogic = DCLogic;
+
+  window.__dcBoot = function (LogicClass, propsSpec) {
+    var tpl = document.getElementById('dc-markup');
+    var rootKids = compileChildren(tpl.content.childNodes);
+    var defaults = {};
+    for (var key in propsSpec) {
+      if (key.charAt(0) === '$') continue;
+      defaults[key] = propsSpec[key] && propsSpec[key]['default'];
+    }
+
+    function Host() {
+      P.Component.call(this);
+      this.logic = new LogicClass(defaults);
+      this.logic.__host = this;
+    }
+    Host.prototype = Object.create(P.Component.prototype);
+    Host.prototype.constructor = Host;
+    Host.prototype.componentDidMount = function () {
+      try { if (this.logic.componentDidMount) this.logic.componentDidMount(); } catch (e) { console.error(e); }
+    };
+    Host.prototype.componentWillUnmount = function () {
+      try { if (this.logic.componentWillUnmount) this.logic.componentWillUnmount(); } catch (e) { console.error(e); }
+    };
+    Host.prototype.render = function () {
+      var vals = {};
+      try { vals = this.logic.renderVals ? this.logic.renderVals() || {} : {}; } catch (e) { console.error(e); }
+      return h.apply(null, [P.Fragment, null].concat(renderChildren(rootKids, vals)));
+    };
+
+    var mount = document.getElementById('app');
+    P.render(h(Host, null), mount);
+    document.documentElement.classList.add('dc-ready');
+  };
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  hexToRgb(hex) {
+    let h = String(hex || '').replace('#', '');
+    if (h.length === 3) h = h.split('').map((c) => c + c).join('');
+    const n = parseInt(h, 16);
+    if (h.length !== 6 || isNaN(n)) return [198, 244, 50];
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+
+  componentDidMount() {
+    this._alive = true;
+    this._timers = [];
+    this._reduce = false;
+    try {
+      this._reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    } catch (e) {}
+    if (!this._reduce) {
+      this.startCaptions();
+      this.setState({ playing: true });
+    }
+    this.replayChat();
+    this.startTyping();
+    this.tickClock();
+    this._clock = setInterval(() => this.tickClock(), 15000);
+    this._loopFn = (t) => this.frame(t);
+    this._raf = requestAnimationFrame(this._loopFn);
+    this._vidTry = setTimeout(() => this.startDemoVideos(), 300);
+  }
+
+  demoVideos() {
+    try {
+      return { a: document.querySelector('[data-demo="after"]'), b: document.querySelector('[data-demo="before"]') };
+    } catch (e) {
+      return { a: null, b: null };
+    }
+  }
+
+  startDemoVideos() {
+    const { a, b } = this.demoVideos();
+    [a, b].forEach((v) => {
+      if (!v) return;
+      v.muted = true;
+      v.defaultMuted = true;
+      v.playsInline = true;
+      v.loop = true;
+      if (this._reduce) {
+        try { v.pause(); v.currentTime = 1.6; } catch (e) {}
+      } else {
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+      }
+    });
+  }
+
+  syncDemoVideos(now) {
+    if (this._reduce) return;
+    if (this._lastSync && now - this._lastSync < 400) return;
+    this._lastSync = now;
+    const { a, b } = this.demoVideos();
+    if (!a || !b || a.readyState < 2 || b.readyState < 2) return;
+    if (a.paused || b.paused) { this.startDemoVideos(); return; }
+    const drift = Math.abs(a.currentTime - b.currentTime);
+    if (drift > 0.12 && drift < a.duration - 0.3) {
+      try { b.currentTime = a.currentTime; } catch (e) {}
+    }
+  }
+
+  componentWillUnmount() {
+    this._alive = false;
+    clearTimeout(this._vidTry);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    clearInterval(this._clock);
+    clearInterval(this._type);
+    this.stopCaptions();
+    this.clearChat();
+  }
+
+  termText() {
+    return 'rayane@cutcode:~$ deploy --video --web --ia';
+  }
+
+  tickClock() {
+    try {
+      const t = new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' });
+      this.setState({ clock: t });
+    } catch (e) {}
+  }
+
+  startTyping() {
+    const full = this.termText();
+    clearInterval(this._type);
+    if (this._reduce) {
+      this.setState({ typed: full.length });
+      return;
+    }
+    let i = 0;
+    this.setState({ typed: 0 });
+    this._type = setInterval(() => {
+      i += 1;
+      this.setState({ typed: i });
+      if (i >= full.length) clearInterval(this._type);
+    }, 42);
+  }
+
+  startCaptions() {
+    this.stopCaptions();
+    this._cap = setInterval(() => {
+      const st = this.state || {};
+      this.setState({ capIndex: ((st.capIndex ?? 4) + 1) % 5 });
+    }, 520);
+  }
+
+  stopCaptions() {
+    if (this._cap) {
+      clearInterval(this._cap);
+      this._cap = null;
+    }
+  }
+
+  clearChat() {
+    (this._timers || []).forEach((t) => clearTimeout(t));
+    this._timers = [];
+  }
+
+  replayChat() {
+    this.clearChat();
+    if (this._reduce) {
+      this.setState({ chatStep: 4, typing: false });
+      return;
+    }
+    this.setState({ chatStep: 0, typing: false });
+    const at = (ms, patch) => {
+      this._timers.push(setTimeout(() => this.setState(patch), ms));
+    };
+    at(400, { typing: true });
+    at(1300, { typing: false, chatStep: 1 });
+    at(1700, { typing: true });
+    at(2800, { typing: false, chatStep: 2 });
+    at(3300, { typing: true });
+    at(4000, { typing: false, chatStep: 3 });
+    at(4600, { chatStep: 4 });
+  }
+
+  frame(now) {
+    if (!this._alive) return;
+    try { this.drawSphere(now); } catch (e) {}
+    try { this.stepObjects(now); } catch (e) {}
+    try { this.syncDemoVideos(now); } catch (e) {}
+    this._raf = requestAnimationFrame(this._loopFn);
+  }
+
+  sphereInit() {
+    const words = ['Next.js', 'React Native', 'Supabase', 'Symfony', 'Python', 'FFmpeg', 'Claude API', 'n8n', 'Make', 'Ansible', 'Stripe', 'WebGPU', 'Whisper', 'Montage', 'Sous-titres', 'Agents IA'];
+    const N = 170;
+    const pts = [];
+    const ga = Math.PI * (3 - Math.sqrt(5));
+    for (let i = 0; i < N; i++) {
+      const y = 1 - (i / (N - 1)) * 2;
+      const r = Math.sqrt(Math.max(0, 1 - y * y));
+      const t = ga * i;
+      pts.push({ x: Math.cos(t) * r, y: y, z: Math.sin(t) * r, w: null });
+    }
+    const step = N / words.length;
+    words.forEach((w, k) => {
+      pts[Math.min(N - 1, Math.floor(k * step + step / 2))].w = w;
+    });
+    const pairs = [];
+    for (let i = 0; i < N; i++) {
+      for (let j = i + 1; j < N; j++) {
+        const dx = pts[i].x - pts[j].x;
+        const dy = pts[i].y - pts[j].y;
+        const dz = pts[i].z - pts[j].z;
+        if (dx * dx + dy * dy + dz * dz < 0.085) pairs.push([i, j]);
+      }
+    }
+    this._sph = { pts: pts, pairs: pairs, rx: -0.35, ry: 0.5, vx: 0, vy: 0, drag: false, lx: 0, ly: 0, mx: -1, my: -1, li: 0 };
+  }
+
+  drawSphere(now) {
+    let c = this._canvas;
+    if (!c || !c.isConnected) {
+      c = document.querySelector('[data-rpm="sphere"]');
+      this._canvas = c;
+    }
+    if (!c) return;
+    if (!this._sph) this.sphereInit();
+    const s = this._sph;
+    const w = c.clientWidth;
+    const h = c.clientHeight;
+    if (!w || !h) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const W = Math.round(w * dpr);
+    const H = Math.round(h * dpr);
+    if (c.width !== W || c.height !== H) {
+      c.width = W;
+      c.height = H;
+    }
+    const ctx = c.getContext('2d');
+    if (!ctx) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+
+    if (!s.drag) {
+      s.rx += s.vx;
+      s.ry += s.vy;
+      s.vx *= 0.94;
+      s.vy *= 0.94;
+      if (!this._reduce) s.ry += 0.0028;
+      if (now - s.li > 2500) {
+        s.rx = Math.atan2(Math.sin(s.rx), Math.cos(s.rx));
+        s.rx += (-0.35 - s.rx) * 0.015;
+      }
+    }
+
+    const rgb = this._rgb || [198, 244, 50];
+    const col = (al) => 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + Math.max(0, Math.min(1, al)).toFixed(3) + ')';
+    const cY = Math.cos(s.ry);
+    const sY = Math.sin(s.ry);
+    const cX = Math.cos(s.rx);
+    const sX = Math.sin(s.rx);
+    const R = Math.min(w, h) * 0.34;
+    const ox = w / 2;
+    const oy = h / 2;
+    const fov = 3.2;
+    const rot = (x, y, z) => {
+      const x1 = x * cY + z * sY;
+      const z1 = -x * sY + z * cY;
+      const y2 = y * cX - z1 * sX;
+      const z2 = y * sX + z1 * cX;
+      const k = fov / (fov + z2);
+      return { x: ox + x1 * R * k, y: oy + y2 * R * k, z: z2, k: k };
+    };
+
+    const P = s.pts.map((p) => {
+      const q = rot(p.x, p.y, p.z);
+      q.w = p.w;
+      return q;
+    });
+
+    const tilt = 0.45;
+    const ct = Math.cos(tilt);
+    const stl = Math.sin(tilt);
+    ctx.lineWidth = 1;
+    let prev = null;
+    for (let i = 0; i <= 96; i++) {
+      const a = (i / 96) * Math.PI * 2;
+      const x = Math.cos(a) * 1.32;
+      const z0 = Math.sin(a) * 1.32;
+      const q = rot(x, -z0 * stl, z0 * ct);
+      if (prev) {
+        const f = 1 - ((prev.z + q.z) / 2 + 1.4) / 2.8;
+        ctx.strokeStyle = col(0.06 + f * 0.4);
+        ctx.beginPath();
+        ctx.moveTo(prev.x, prev.y);
+        ctx.lineTo(q.x, q.y);
+        ctx.stroke();
+      }
+      prev = q;
+    }
+
+    for (let i = 0; i < s.pairs.length; i++) {
+      const a = P[s.pairs[i][0]];
+      const b = P[s.pairs[i][1]];
+      const f = 1 - ((a.z + b.z) / 2 + 1) / 2;
+      ctx.strokeStyle = col(0.03 + f * 0.22);
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+    }
+
+    for (let i = 0; i < P.length; i++) {
+      const p = P[i];
+      const f = 1 - (p.z + 1) / 2;
+      let r = 0.7 + f * 1.7;
+      let al = 0.12 + f * 0.8;
+      if (s.mx >= 0) {
+        const d = Math.hypot(p.x - s.mx, p.y - s.my);
+        if (d < 70) {
+          const g = 1 - d / 70;
+          r += g * 2.6;
+          al += g * 0.5;
+        }
+      }
+      ctx.fillStyle = col(al);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    const sa = (now / 2600) % (Math.PI * 2);
+    const sat = rot(Math.cos(sa) * 1.32, -Math.sin(sa) * 1.32 * stl, Math.sin(sa) * 1.32 * ct);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.arc(sat.x, sat.y, 2.6 * sat.k, 0, Math.PI * 2);
+    ctx.fill();
+
+    const L = P.filter((p) => p.w).sort((a, b) => b.z - a.z);
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    for (let i = 0; i < L.length; i++) {
+      const p = L[i];
+      const f = 1 - (p.z + 1) / 2;
+      const size = Math.round(9 + f * 6);
+      ctx.font = '500 ' + size + 'px "JetBrains Mono", ui-monospace, monospace';
+      const ly = p.y - 14;
+      if (f > 0.72) {
+        const tw = ctx.measureText(p.w).width;
+        ctx.fillStyle = 'rgba(5,6,10,0.8)';
+        ctx.fillRect(p.x - tw / 2 - 7, ly - size / 2 - 4, tw + 14, size + 8);
+        ctx.strokeStyle = col(0.55);
+        ctx.strokeRect(p.x - tw / 2 - 6.5, ly - size / 2 - 3.5, tw + 13, size + 7);
+        ctx.fillStyle = col(1);
+      } else {
+        ctx.fillStyle = 'rgba(237,238,242,' + (0.1 + f * 0.75).toFixed(3) + ')';
+      }
+      ctx.fillText(p.w, p.x, ly);
+    }
+  }
+
+  sphereHandlers() {
+    if (this._sh) return this._sh;
+    this._sh = {
+      ref: (el) => {
+        this._canvas = el;
+      },
+      down: (e) => {
+        if (!this._sph) this.sphereInit();
+        const s = this._sph;
+        s.drag = true;
+        s.lx = e.clientX;
+        s.ly = e.clientY;
+        s.vx = 0;
+        s.vy = 0;
+        s.li = performance.now();
+        try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {}
+      },
+      move: (e) => {
+        const s = this._sph;
+        if (!s) return;
+        const r = e.currentTarget.getBoundingClientRect();
+        s.mx = e.clientX - r.left;
+        s.my = e.clientY - r.top;
+        if (!s.drag) return;
+        const dx = e.clientX - s.lx;
+        const dy = e.clientY - s.ly;
+        s.lx = e.clientX;
+        s.ly = e.clientY;
+        s.ry -= dx * 0.008;
+        s.rx += dy * 0.008;
+        s.vy = Math.max(-0.2, Math.min(0.2, -dx * 0.008));
+        s.vx = Math.max(-0.2, Math.min(0.2, dy * 0.008));
+        s.li = performance.now();
+      },
+      up: () => {
+        const s = this._sph;
+        if (s) {
+          s.drag = false;
+          s.li = performance.now();
+        }
+      },
+      leave: () => {
+        const s = this._sph;
+        if (s) {
+          s.mx = -1;
+          s.my = -1;
+        }
+      }
+    };
+    return this._sh;
+  }
+
+  objInit() {
+    const mk = (bx, by, spin) => ({ x: bx, y: by, bx: bx, by: by, vx: 0, vy: 0, drag: false, lx: 0, ly: 0, li: 0, spin: spin });
+    this._objs = {
+      phone: mk(-8, -24, 0.22),
+      layers: mk(-16, 30, 0),
+      crates: mk(-24, 40, 0.18),
+      tracks: mk(-20, -30, 0),
+      bars: mk(-26, 34, 0.16),
+      chat: mk(-8, 22, 0)
+    };
+    this._els = this._els || {};
+  }
+
+  stepObjects(now) {
+    if (!this._objs) return;
+    const norm = (v) => ((((v + 180) % 360) + 360) % 360) - 180;
+    const keys = Object.keys(this._objs);
+    for (let i = 0; i < keys.length; i++) {
+      const k = keys[i];
+      const o = this._objs[k];
+      if (!o.drag) {
+        o.x += o.vx;
+        o.y += o.vy;
+        o.vx *= 0.92;
+        o.vy *= 0.92;
+        if (now - o.li > 2200) {
+          o.x = norm(o.x);
+          o.x += (o.bx - o.x) * 0.03;
+          if (o.spin) {
+            if (!this._reduce) o.y += o.spin;
+            if (Math.abs(o.y) > 3600) o.y = norm(o.y);
+          } else {
+            o.y = norm(o.y);
+            const ty = o.by + (this._reduce ? 0 : Math.sin(now / 1500) * 14);
+            o.y += (ty - o.y) * 0.03;
+          }
+        }
+      }
+      let el = this._els[k];
+      if (!el || !el.isConnected) {
+        el = document.querySelector('[data-rpm-obj="' + k + '"]');
+        this._els[k] = el;
+      }
+      if (el) el.style.transform = 'rotateX(' + o.x.toFixed(2) + 'deg) rotateY(' + o.y.toFixed(2) + 'deg)';
+    }
+  }
+
+  objHandlers(k) {
+    if (!this._objs) this.objInit();
+    this._h = this._h || {};
+    if (this._h[k]) return this._h[k];
+    const get = () => this._objs && this._objs[k];
+    const skip = (e) => e.target && e.target.closest && e.target.closest('button, a, input, textarea');
+    const clamp = (v) => Math.max(-24, Math.min(24, v));
+    this._h[k] = {
+      down: (e) => {
+        if (skip(e)) return;
+        const o = get();
+        if (!o) return;
+        o.drag = true;
+        o.lx = e.clientX;
+        o.ly = e.clientY;
+        o.vx = 0;
+        o.vy = 0;
+        o.li = performance.now();
+        try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {}
+      },
+      move: (e) => {
+        const o = get();
+        if (!o || !o.drag) return;
+        const dx = e.clientX - o.lx;
+        const dy = e.clientY - o.ly;
+        o.lx = e.clientX;
+        o.ly = e.clientY;
+        o.y += dx * 0.5;
+        o.x -= dy * 0.5;
+        o.vy = clamp(dx * 0.5);
+        o.vx = clamp(-dy * 0.5);
+        o.li = performance.now();
+      },
+      up: () => {
+        const o = get();
+        if (o) {
+          o.drag = false;
+          o.li = performance.now();
+        }
+      },
+      ref: (el) => {
+        this._els = this._els || {};
+        this._els[k] = el;
+        const o = get();
+        if (el && o) el.style.transform = 'rotateX(' + o.x + 'deg) rotateY(' + o.y + 'deg)';
+      }
+    };
+    return this._h[k];
+  }
+
+  renderVals() {
+    const st = this.state || {};
+    const accent = this.props.accent ?? '#C6F432';
+    const email = this.props.email ?? 'rayaneMenkar_pro@outlook.fr';
+    const dark = '#05060A';
+    const rgb = this.hexToRgb(accent);
+    this._rgb = rgb;
+    const a = (al) => 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + al + ')';
+    const acc = { a06: a(0.06), a10: a(0.1), a15: a(0.15), a35: a(0.35), a60: a(0.6), a80: a(0.8) };
+    const chip = (active) => ({
+      bg: active ? accent : 'transparent',
+      fg: active ? dark : '#EDEEF2',
+      bd: active ? accent : '#262A33',
+      pressed: active
+    });
+
+    const full = this.termText();
+    const typedText = full.slice(0, st.typed ?? full.length);
+
+    const filter = st.filter ?? 'all';
+    const cats = {
+      clipforge: ['video', 'web'],
+      proteo: ['web'],
+      stock: ['web'],
+      clipfactory: ['video', 'auto'],
+      data: ['data'],
+      vocalio: ['auto']
+    };
+    const keys = Object.keys(cats);
+    const filterDefs = [
+      { id: 'all', label: 'Tous' },
+      { id: 'video', label: 'Vidéo' },
+      { id: 'web', label: 'Web et apps' },
+      { id: 'auto', label: 'Automatisation et IA' },
+      { id: 'data', label: 'Data' }
+    ];
+    const filters = filterDefs.map((d) => Object.assign({}, chip(filter === d.id), {
+      label: d.label,
+      count: d.id === 'all' ? keys.length : keys.filter((k) => cats[k].indexOf(d.id) >= 0).length,
+      pick: () => this.setState({ filter: d.id })
+    }));
+    const show = {};
+    keys.forEach((k) => {
+      show[k] = filter === 'all' || cats[k].indexOf(filter) >= 0 ? 'flex' : 'none';
+    });
+
+    const capWords = ['ON', 'VOUS', 'DIT', 'ENFIN', 'TOUT'];
+    const capIndex = st.capIndex ?? 4;
+    const words = capWords.map((t, i) => ({
+      text: t,
+      color: i === capIndex ? accent : '#FFFFFF',
+      scale: i === capIndex ? 1.14 : 1
+    }));
+    const progress = Math.round(((capIndex + 1) / capWords.length) * 100);
+    const playing = !!st.playing;
+    const togglePlay = () => {
+      if ((this.state || {}).playing) {
+        this.stopCaptions();
+        this.setState({ playing: false });
+      } else {
+        this.startCaptions();
+        this.setState({ playing: true });
+      }
+    };
+
+    const split = st.split ?? 50;
+    const setFromEvent = (e) => {
+      const r = e.currentTarget.getBoundingClientRect();
+      if (!r.width) return;
+      const v = ((e.clientX - r.left) / r.width) * 100;
+      this.setState({ split: Math.round(Math.max(0, Math.min(100, v))) });
+    };
+    const onSplit = (e) => this.setState({ split: Number(e.target.value) });
+    const dragStart = (e) => {
+      this._drag = true;
+      setFromEvent(e);
+    };
+    const dragMove = (e) => {
+      if (this._drag) setFromEvent(e);
+    };
+    const dragEnd = () => {
+      this._drag = false;
+    };
+
+    const goalDefs = [
+      { id: 'masse', label: 'Prise de masse', p: 72, g: 88, l: 58, deg: 300 },
+      { id: 'maintien', label: 'Maintien', p: 64, g: 62, l: 46, deg: 230 },
+      { id: 'seche', label: 'Sèche', p: 86, g: 36, l: 30, deg: 165 }
+    ];
+    const goal = st.goal ?? 'masse';
+    const gd = goalDefs.find((x) => x.id === goal) || goalDefs[0];
+    const goals = goalDefs.map((x) => Object.assign({}, chip(x.id === goal), {
+      label: x.label,
+      pick: () => this.setState({ goal: x.id })
+    }));
+    const macro = { p: gd.p + '%', g: gd.g + '%', l: gd.l + '%', deg: gd.deg, label: gd.label };
+
+    const n = st.crates ?? 4;
+    const moves = st.moves ?? 0;
+    const low = n <= 2;
+    const crateDefs = [[-32, 60, -32], [32, 60, -32], [-32, 60, 32], [32, 60, 32], [-32, 0, -32], [32, 0, 32]];
+    const crates = {};
+    crateDefs.forEach((p, i) => {
+      crates['c' + (i + 1)] = { x: p[0], y: p[1], z: p[2], s: i < n ? 1 : 0.01 };
+    });
+    const orange = (al) => 'rgba(255,138,61,' + al + ')';
+    const cr = {
+      face: low ? orange(0.1) : a(0.07),
+      line: low ? orange(0.9) : a(0.8),
+      inner: low ? orange(0.12) : a(0.1)
+    };
+    const stock = {
+      label: n + (n > 1 ? ' CAISSES' : ' CAISSE'),
+      status: n === 0 ? 'RUPTURE' : low ? 'SEUIL BAS' : 'OK',
+      badgeBg: low ? '#3A2516' : '#1A1D25',
+      badgeFg: low ? '#FFB27A' : '#D4D6DC',
+      low: low,
+      ok: !low,
+      log: moves === 0 ? 'Stock calculé depuis l\'historique des mouvements' : moves + (moves > 1 ? ' mouvements' : ' mouvement') + ' · stock recalculé',
+      take: () => {
+        const s = this.state || {};
+        this.setState({ crates: Math.max(0, (s.crates ?? 4) - 1), moves: (s.moves ?? 0) + 1 });
+      },
+      add: () => {
+        const s = this.state || {};
+        this.setState({ crates: Math.min(6, (s.crates ?? 4) + 1), moves: (s.moves ?? 0) + 1 });
+      }
+    };
+
+    const step = st.chatStep ?? 4;
+    const typing = !!st.typing;
+    const slot = (on, typ) => ({ bo: on ? 1 : 0, by: on ? 0 : 10, to: typ ? 1 : 0 });
+    const chat = {
+      s1: slot(step >= 1, typing && step === 0),
+      s2: slot(step >= 2, typing && step === 1),
+      s3: slot(step >= 3, typing && step === 2),
+      s4: slot(step >= 4, false),
+      replay: () => this.replayChat()
+    };
+
+    const needDefs = [
+      { id: 'video', label: 'Montage vidéo' },
+      { id: 'site', label: 'Site web' },
+      { id: 'app', label: 'Logiciel ou app' },
+      { id: 'auto', label: 'Automatisation et IA' }
+    ];
+    const delayDefs = [
+      { id: 'urgent', label: 'Urgent' },
+      { id: 'twoweeks', label: 'Sous 2 semaines' },
+      { id: 'flex', label: 'Pas pressé' }
+    ];
+    const budgetDefs = [
+      { id: 'b1', label: 'Moins de 500 €' },
+      { id: 'b2', label: '500 à 1 000 €' },
+      { id: 'b3', label: 'Plus de 1 000 €' },
+      { id: 'b4', label: 'À définir' }
+    ];
+    const need = st.need ?? 'video';
+    const delay = st.delay ?? 'twoweeks';
+    const budget = st.budget ?? 'b4';
+    const note = st.note ?? '';
+    const mk = (defs, cur, key) => defs.map((d) => Object.assign({}, chip(d.id === cur), {
+      label: d.label,
+      pick: () => this.setState({ [key]: d.id })
+    }));
+    const labelOf = (defs, id) => (defs.find((d) => d.id === id) || defs[0]).label;
+    const needLabel = labelOf(needDefs, need);
+    const delayLabel = labelOf(delayDefs, delay);
+    const budgetLabel = labelOf(budgetDefs, budget);
+    const summary = needLabel + ' · ' + delayLabel + ' · ' + budgetLabel;
+    const body = 'Bonjour Rayane,\n\nBesoin : ' + needLabel + '\nDélai : ' + delayLabel + '\nBudget : ' + budgetLabel + (note ? '\n\nLe projet : ' + note : '') + '\n\nMerci !';
+    const mailto = 'mailto:' + email + '?subject=' + encodeURIComponent('Demande de projet : ' + needLabel) + '&body=' + encodeURIComponent(body);
+
+    const tiltMove = (e) => {
+      if (this._reduce) return;
+      const el = e.currentTarget;
+      const r = el.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      el.style.transform = 'perspective(900px) rotateX(' + (-py * 9).toFixed(2) + 'deg) rotateY(' + (px * 11).toFixed(2) + 'deg)';
+    };
+    const tiltLeave = (e) => {
+      e.currentTarget.style.transform = '';
+    };
+
+    return {
+      accent: accent,
+      acc: acc,
+      email: email,
+      clock: st.clock ?? '--:--',
+      typedText: typedText,
+      sph: this.sphereHandlers(),
+      h3d: {
+        phone: this.objHandlers('phone'),
+        layers: this.objHandlers('layers'),
+        crates: this.objHandlers('crates'),
+        tracks: this.objHandlers('tracks'),
+        bars: this.objHandlers('bars'),
+        chat: this.objHandlers('chat')
+      },
+      tiltMove: tiltMove,
+      tiltLeave: tiltLeave,
+      filters: filters,
+      show: show,
+      words: words,
+      progress: progress,
+      playing: playing,
+      paused: !playing,
+      playLabel: playing ? 'Mettre en pause les sous-titres' : 'Lancer les sous-titres',
+      togglePlay: togglePlay,
+      split: split,
+      clipRight: 100 - split,
+      onSplit: onSplit,
+      dragStart: dragStart,
+      dragMove: dragMove,
+      dragEnd: dragEnd,
+      goals: goals,
+      macro: macro,
+      crates: crates,
+      cr: cr,
+      stock: stock,
+      chat: chat,
+      needs: mk(needDefs, need, 'need'),
+      delays: mk(delayDefs, delay, 'delay'),
+      budgets: mk(budgetDefs, budget, 'budget'),
+      note: note,
+      onNote: (e) => this.setState({ note: e.target.value }),
+      summary: summary,
+      mailto: mailto,
+      pickNeed: {
+        video: () => this.setState({ need: 'video' }),
+        site: () => this.setState({ need: 'site' }),
+        auto: () => this.setState({ need: 'auto' })
+      }
+    };
+  }
+}
+window.__dcBoot(Component, {"accent": {"editor": "color", "default": "#C6F432", "options": ["#C6F432", "#38F2FF", "#A78BFA", "#FF8A3D"]}, "email": {"editor": "text", "default": "rayaneMenkar_pro@outlook.fr"}, "$preview": {"width": 1440, "height": 7600}});
+</script>
+</body>
+</html>
