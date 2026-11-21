@@ -784,10 +784,20 @@ a{color:#EDEEF2}a:hover{color:#FFFFFF}
 <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">RÉCAPITULATIF</span>
 <span style="font-size: 15px; color: #EDEEF2">{{summary}}</span>
 </div>
-<a href="{{mailto}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: {{accent}}; color: #05060A; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 0 26px {{acc.a35}}">Envoyer la demande
+<button type="button" onClick="{{toggleMail}}" aria-expanded="{{mailOpen}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: {{accent}}; color: #05060A; border: none; cursor: pointer; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 16px; box-shadow: 0 0 26px {{acc.a35}}">Envoyer la demande
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
-</a>
+</button>
 </div>
+<sc-if value="{{mailOpen}}" hint-placeholder-val="{{ false }}">
+<div style="flex: 1 1 100%; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #8A8F99">ENVOYER AVEC</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a href="{{mail.gmail}}" target="{{mail.target}}" rel="noopener" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #262A33; color: #EDEEF2; text-decoration: none; display: inline-flex; align-items: center; font-size: 14px; font-weight: 500">Gmail</a>
+<a href="{{mail.outlook}}" target="{{mail.target}}" rel="noopener" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #262A33; color: #EDEEF2; text-decoration: none; display: inline-flex; align-items: center; font-size: 14px; font-weight: 500">Outlook</a>
+<a href="{{mailto}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #262A33; color: #EDEEF2; text-decoration: none; display: inline-flex; align-items: center; font-size: 14px; font-weight: 500">{{mail.defaultLabel}}</a>
+</div>
+</div>
+</sc-if>
 <div style="font-size: 14px; color: #9EA3AE">Ou écrivez directement à <a href="mailto:{{email}}" style="color: #EDEEF2">{{email}}</a></div>
 </div>
 </section>
@@ -1677,6 +1687,13 @@ class Component extends DCLogic {
     const summary = needLabel + ' · ' + delayLabel + ' · ' + budgetLabel;
     const body = 'Bonjour Rayane,\n\nBesoin : ' + needLabel + '\nDélai : ' + delayLabel + '\nBudget : ' + budgetLabel + (note ? '\n\nLe projet : ' + note : '') + '\n\nMerci !';
     const mailto = 'mailto:' + email + '?subject=' + encodeURIComponent('Demande de projet : ' + needLabel) + '&body=' + encodeURIComponent(body);
+    const subj = 'Demande de projet : ' + needLabel;
+    const q = (k1, k2, k3) => k1 + '=' + encodeURIComponent(email) + '&' + k2 + '=' + encodeURIComponent(subj) + '&' + k3 + '=' + encodeURIComponent(body);
+    let mobile = false;
+    try { mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); } catch (e) {}
+    const mail = mobile
+      ? { gmail: 'googlegmail://co?' + q('to', 'subject', 'body'), outlook: 'ms-outlook://compose?' + q('to', 'subject', 'body'), defaultLabel: 'App Mail', target: '_self' }
+      : { gmail: 'https://mail.google.com/mail/?view=cm&fs=1&' + q('to', 'su', 'body'), outlook: 'https://outlook.live.com/mail/0/deeplink/compose?' + q('to', 'subject', 'body'), defaultLabel: 'Logiciel de mail', target: '_blank' };
 
     const tiltMove = (e) => {
       if (this._reduce) return;
@@ -1735,6 +1752,9 @@ class Component extends DCLogic {
       onNote: (e) => this.setState({ note: e.target.value }),
       summary: summary,
       mailto: mailto,
+      mail: mail,
+      mailOpen: !!st.mailOpen,
+      toggleMail: () => this.setState({ mailOpen: !(this.state || {}).mailOpen }),
       pickNeed: {
         video: () => this.setState({ need: 'video' }),
         site: () => this.setState({ need: 'site' }),
